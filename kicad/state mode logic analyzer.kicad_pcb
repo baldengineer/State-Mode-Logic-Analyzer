@@ -592,7 +592,7 @@
 
   (footprint "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" (layer "F.Cu")
     (tstamp 14f815e3-d789-4a3a-9913-742c04cadecc)
-    (at 152 66.505)
+    (at 192.527 97.287)
     (descr "Through hole straight pin header, 2x10, 2.54mm pitch, double rows")
     (tags "Through hole pin header THT 2x10 2.54mm double row")
     (property "Sheetfile" "state mode logic analyzer.kicad_sch")
@@ -3557,7 +3557,7 @@
 
   (footprint "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" (layer "F.Cu")
     (tstamp 7968b3aa-fef5-443b-8493-1b2801bb95e0)
-    (at 144.8 66.505)
+    (at 192.527 69.855)
     (descr "Through hole straight pin header, 2x10, 2.54mm pitch, double rows")
     (tags "Through hole pin header THT 2x10 2.54mm double row")
     (property "Sheetfile" "state mode logic analyzer.kicad_sch")
@@ -5095,7 +5095,7 @@
 
   (footprint "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" (layer "F.Cu")
     (tstamp aaaddb08-ee47-41bb-a18c-980eb7cfc668)
-    (at 137.6 66.505)
+    (at 192.527 42.423)
     (descr "Through hole straight pin header, 2x10, 2.54mm pitch, double rows")
     (tags "Through hole pin header THT 2x10 2.54mm double row")
     (property "Sheetfile" "state mode logic analyzer.kicad_sch")
@@ -6755,7 +6755,7 @@
 
   (footprint "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" (layer "F.Cu")
     (tstamp d9da7fa5-13c7-443e-8cbc-4c3a9ca72821)
-    (at 159.2 66.505)
+    (at 192.527 124.719)
     (descr "Through hole straight pin header, 2x10, 2.54mm pitch, double rows")
     (tags "Through hole pin header THT 2x10 2.54mm double row")
     (property "Sheetfile" "state mode logic analyzer.kicad_sch")
@@ -7925,8 +7925,5 @@
       (rotate (xyz -90 0 0))
     )
   )
-
-  (gr_rect (start 111.275 61.6) (end 176.225 126.55)
-    (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") (tstamp 7d548c41-2e19-42f5-bdb7-b6c63c9d7336))
 
 )
