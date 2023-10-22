@@ -4760,6 +4760,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 800639fa-655d-478d-96d2-4b88f524b8ca)
   )
+  (label "AD1" (at 405.13 120.65 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 80f928e6-974f-4f14-bd7a-a01bc7e308f6)
+  )
   (label "Run" (at 238.125 201.93 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 81b0283f-abab-4ba6-a9fe-a35f4b5794b2)
@@ -4931,6 +4935,10 @@
   (label "A1" (at 159.385 248.92 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c0a9ff95-18bb-4908-9851-12b40a291d10)
+  )
+  (label "AD0" (at 405.13 118.11 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid c1bc4fec-1abc-4eef-a57d-1b8f869829e0)
   )
   (label "A8" (at 159.385 312.42 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -6964,8 +6972,8 @@
     )
     (pin "1" (uuid 9f0fec37-14e2-4363-a048-2b1556f0e60d))
     (pin "2" (uuid 79bc2fef-258a-4826-af20-08e94e24e3d9))
-    (pin "4" (uuid f2c28db5-d783-45fd-98ad-40a8d609c2bc))
     (pin "3" (uuid 7c34534f-10d7-40cf-b93b-d08db76ceea3))
+    (pin "4" (uuid f2c28db5-d783-45fd-98ad-40a8d609c2bc))
     (instances
       (project "state mode logic analyzer"
         (path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
@@ -8136,6 +8144,31 @@
       (project "state mode logic analyzer"
         (path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
           (reference "R16") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "My Library:TestPoint_Harwin") (at 281.94 267.97 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 756004db-4a59-44cd-baf4-b1de75376f29)
+    (property "Reference" "TP15" (at 279.4 262.89 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "TestPoint_Harwin" (at 281.94 262.89 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point" (at 287.02 267.97 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 287.02 267.97 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid bb93e6de-82f6-465b-93ca-17b4b62156fc))
+    (instances
+      (project "state mode logic analyzer"
+        (path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
+          (reference "TP15") (unit 1)
         )
       )
     )
