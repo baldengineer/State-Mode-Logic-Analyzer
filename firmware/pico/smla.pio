@@ -7,10 +7,14 @@ mov osr, ~ null         ; load FFs into OSR (for change to output)
 out pindirs, 8          ; shift 8 FFs into pin direction register from OSR
                         ; and disable data buffer
 
+
+public start:
 .wrap_target 
-start:
-    wait 1 gpio CLK_IN  ; wait for Data Cycle
-    wait 0 gpio CLK_IN    
+    ; rising edge
+    wait 0 gpio CLK_IN  
+    wait 1 gpio CLK_IN    
+
+    in PINS, 24
 .wrap          
 
 
