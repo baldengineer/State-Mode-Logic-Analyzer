@@ -1,5 +1,5 @@
 .program SMLA
-;.origin 0 ; is this needed for the encoded jmp?
+.origin 0 ; is this needed for the encoded jmp?
 ; pins
 
 ;mov osr, ~ null         ; load FFs into OSR (for change to output)
@@ -8,12 +8,11 @@
 .define CLK_IN 2
 
 public start:
-    ; nop ; is a nop needed for the encoded jmp? maybe it can't jmp into the wrap?
+    nop ; is a nop needed for the encoded jmp? maybe it can't jmp into the wrap?
 .wrap_target
     ; rising edge
     wait 0 gpio CLK_IN  
     wait 1 gpio CLK_IN
-        
 
     in PINS, 8
     ;in PINS, 8

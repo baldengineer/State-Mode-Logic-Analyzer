@@ -91,6 +91,11 @@ void smla_pio_setup() {
     pio_sm_init(pio, pio_sm, pio_offset, &c);
 }
 
+void smla_pio_stop() {
+    pio_sm_set_enabled(pio, pio_sm, false);
+    pio_sm_clear_fifos(pio, pio_sm);  
+}
+
 void smla_pio_run() {
     pio_sm_set_enabled(pio, pio_sm, false);
     pio_sm_restart(pio, pio_sm);
@@ -116,9 +121,9 @@ void smla_pio_run() {
     //------------------
 
     // will the real PIO reset, please stand up.
+   //    
     pio_sm_exec(pio, pio_sm, pio_encode_jmp(SMLA_offset_start)); // why is this locking up the PIO now?
     pio_sm_set_enabled(pio, pio_sm, true);
-
     // Load our configraution, and jump to program start
     // pio_sm_init(pio, pio_sm, pio_offset, &c);
 
@@ -148,6 +153,8 @@ inline void check_for_usb_input() {
            // busy_wait_ms(100);
             dma_channel_wait_for_finish_blocking(la_dma_chan);
            // print_capture_buf(cap_buf,SAMPLE_COUNT,0);
+            puts("Disabling State Machine");
+            smla_pio_stop();
             print_capture_buf((uint32_t*)cap_buf,32,0);
         }
     }
