@@ -5,7 +5,7 @@
 ;mov osr, ~ null         ; load FFs into OSR (for change to output)
 ;out pindirs, 8          ; shift 8 FFs into pin direction register from OSR
                         ; and disable data buffer
-.define CLK_IN 2
+.define CLK_IN 5
 
 public start:
     nop ; is a nop needed for the encoded jmp? maybe it can't jmp into the wrap?

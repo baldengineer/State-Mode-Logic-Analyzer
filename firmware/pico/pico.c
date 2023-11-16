@@ -7,6 +7,9 @@
 
 #include "smla.pio.h"
 
+#define CLK_IN 5
+#define TS_CNTR_CLK 2
+
 // PIO 1 of ?
 PIO pio;
 uint pio_offset;
@@ -74,7 +77,7 @@ void smla_pio_setup() {
     pio_sm_config c = SMLA_program_get_default_config(pio_offset);
     pio_sm_set_enabled(pio, pio_sm, false);
 
-    pio_gpio_init(pio, 2);
+    pio_gpio_init(pio, CLK_IN);
 
     sm_config_set_in_pins(&c, 8);
     pio_sm_set_consecutive_pindirs(pio, pio_sm, 8, 8, GPIO_IN);
@@ -165,9 +168,6 @@ inline void check_for_usb_input() {
 void setup() {
     //setup_default_uart();
     stdio_usb_init();
-
-    // gpio_init(2);
-    // gpio_set_dir(2,GPIO_IN);
 
     smla_pio_setup();
 
