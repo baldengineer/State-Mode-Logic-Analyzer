@@ -4,11 +4,14 @@
 #include "hardware/pio.h"
 #include "hardware/dma.h"
 #include "hardware/i2c.h"
+#include "hardware/pwm.h"
 
 #include "smla.pio.h"
 
 #define CLK_IN 5
 #define TS_CNTR_CLK 2
+#define LED_PIN 25
+
 
 // PIO 1 of ?
 PIO pio;
@@ -17,7 +20,7 @@ uint pio_sm;
 uint la_dma_chan=10;
 
 // Buffer for data capture
-#define SAMPLE_COUNT 4000
+#define SAMPLE_COUNT 4096
 uint32_t cap_buf[SAMPLE_COUNT]; // 128 kilobytes, i think?
 
 // shortcut for setting up output pins (there isn't a SDK call for this?)
@@ -118,7 +121,7 @@ void smla_pio_run() {
         &c,                     // configuration
         cap_buf,                // Destination pointer
         &pio->rxf[pio_sm],      // Source pointer
-        32,           // Number of transfers
+        SAMPLE_COUNT,           // Number of transfers
         true                    // Start immediately
     );
     //------------------
@@ -132,6 +135,62 @@ void smla_pio_run() {
 
     // set the state machine running
     // pio_sm_set_enabled(pio, pio_sm, true);
+}
+
+
+void setup_pwm(uint16_t pwm_wrap, uint16_t pwm_level) {
+    gpio_set_function(TS_CNTR_CLK, GPIO_FUNC_PWM);
+
+    uint slice_num = pwm_gpio_to_slice_num(TS_CNTR_CLK);
+    printf("GPIO %d has PWM slice %d", TS_CNTR_CLK, slice_num);
+    pwm_set_wrap(slice_num, 2); // 0 to 4 inclusive
+    pwm_config config = pwm_get_default_config();
+    // Set divider, reduces counter clock to sysclock/this value
+    //pwm_config_set_clkdiv(&config, 4.f);
+    // Load the configuration into our PWM slice, and set it running.
+    pwm_init(slice_num, &config, true);
+
+    pwm_set_gpio_level(TS_CNTR_CLK, pwm_level);
+    pwm_set_wrap(pwm_gpio_to_slice_num(TS_CNTR_CLK), pwm_wrap);
+}
+
+void counter_pwm_state(bool state) {
+    pwm_set_enabled(pwm_gpio_to_slice_num(TS_CNTR_CLK), state);
+}
+
+void run_the_analyzer() {
+    uint64_t start;
+    uint64_t end;
+    int difference;
+
+    puts("Running State Machine");
+    start = time_us_64();
+    smla_pio_run();
+    dma_channel_wait_for_finish_blocking(la_dma_chan);
+    end = time_us_64();
+    puts("Disabling State Machine");
+    smla_pio_stop();
+    print_capture_buf((uint32_t*)cap_buf,32,0);
+    difference = end-start;
+    printf("Analyzer capture took %d us\n", difference);
+}
+
+void scan_buffer() {
+    uint64_t start;
+    uint64_t end;
+    int difference;
+
+
+    uint16_t matched_sample = 0;
+    start = time_us_64();
+    for (uint16_t x=0; x < SAMPLE_COUNT; x++) {
+        if (cap_buf[x] == 0x0000) {
+            matched_sample = x;
+        }
+    }
+    end = time_us_64();
+    difference = end - start;
+    printf("Scan took %d us and matched on sample %d\n", difference, matched_sample);
 }
 
 inline void check_for_usb_input() {
@@ -150,20 +209,23 @@ inline void check_for_usb_input() {
     if (stdio_usb_connected()) {
         uint8_t incoming_char = getchar_timeout_us(0);
         if ((incoming_char == '!')) {  
-            puts("Running State Machine");
-            smla_pio_run();
-            puts("Waiting for DMA to finish...");
-           // busy_wait_ms(100);
-            dma_channel_wait_for_finish_blocking(la_dma_chan);
-           // print_capture_buf(cap_buf,SAMPLE_COUNT,0);
-            puts("Disabling State Machine");
-            smla_pio_stop();
-            print_capture_buf((uint32_t*)cap_buf,32,0);
+            run_the_analyzer();
+        }
+        if ((incoming_char == '@')) {
+            uint pwm_reg = (*(uint *)(PWM_BASE+0x14));
+            if (pwm_reg & PWM_CH1_CSR_EN_BITS ) {
+                puts("Disabling counter clock");
+                counter_pwm_state(false);
+            } else {
+                puts("Enabling counter clock");
+                counter_pwm_state(true);
+            }
+        }
+        if ((incoming_char == '$')) {
+            scan_buffer();
         }
     }
 }
-
-#define LED_PIN 25
 
 void setup() {
     //setup_default_uart();
@@ -172,6 +234,12 @@ void setup() {
     smla_pio_setup();
 
     out_init(LED_PIN, true);
+    
+    // this won't work because you can only use 21, 23, 24, 25
+    //clock_gpio_init(TS_CNTR_CLK, CLOCKS_CLK_GPOUT0_CTRL_AUXSRC_VALUE_CLK_SYS, 10);
+
+    setup_pwm(11,5);
+
     printf("Hello, world!\n");
 }
 int main() {
@@ -181,7 +249,7 @@ int main() {
     for(;;) {
         static uint32_t previous_ticks=0;
         static bool led_state=true;
-    
+
         if (time_us_32()-previous_ticks >= blink_interval) {
             previous_ticks = time_us_32();
             led_state = !led_state;
@@ -189,10 +257,6 @@ int main() {
             //printf("pin 2: %d\n",gpio_get(2));
         }
         check_for_usb_input();
-
-        // restart the state machines ... 
-        // TEST_CAP_pio_arm((uint32_t*)cap_buf, SAMPLE_COUNT);
-		// dma_channel_wait_for_finish_blocking(10);
     }
     return 0;
 }
