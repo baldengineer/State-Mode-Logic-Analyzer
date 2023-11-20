@@ -45,7 +45,7 @@ target_link_libraries(pico
         hardware_pio
         hardware_timer
         hardware_watchdog
-        hardware_clocks
+        hardware_pwm
         )
 
 # create map/bin/hex/uf2 file etc.
