@@ -4360,7 +4360,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x12_P2.54mm_Horizontal.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x12_P2.54mm_Horizontal.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -5478,7 +5478,7 @@
       (net 49 "/SCL") (pinfunction "Pin_19") (pintype "passive") (tstamp e6e0aea8-a7fc-4ac1-a483-8e22a493a7d0))
     (pad "20" thru_hole oval (at 2.54 22.86 270) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 48 "/SDA") (pinfunction "Pin_20") (pintype "passive") (tstamp 872cb731-ba1c-4da0-972c-d8399ee680d3))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x10_P2.54mm_Horizontal.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x10_P2.54mm_Horizontal.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -6405,7 +6405,7 @@
       (net 49 "/SCL") (pinfunction "Pin_19") (pintype "passive") (tstamp e1b3c011-5dfb-466c-bcee-210254eb6503))
     (pad "20" thru_hole oval (at -2.54 22.86 270) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 48 "/SDA") (pinfunction "Pin_20") (pintype "passive") (tstamp 8041a434-a1d3-4fa4-afbc-f8fd3d97ff27))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x10_P2.54mm_Horizontal.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x10_P2.54mm_Horizontal.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
