@@ -1,3 +1,8 @@
 datasheets/
 kicad/rp2040/bom/
 kicad/rp2040/fp-lib-table
+kicad/rp2350/fp-info-cache
+kicad/rp2350/state mode logic analyzer rp2350.kicad_prl
+kicad/rp2350/#auto_saved_files#
+*.lck
+kicad/rp2350/sym-lib-table
