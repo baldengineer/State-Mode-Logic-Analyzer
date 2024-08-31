@@ -6,3 +6,5 @@ kicad/rp2350/state mode logic analyzer rp2350.kicad_prl
 kicad/rp2350/#auto_saved_files#
 *.lck
 kicad/rp2350/sym-lib-table
+firmware/clkdly/clkdly/build/
+firmware/clkdly/clkdly/.vscode/

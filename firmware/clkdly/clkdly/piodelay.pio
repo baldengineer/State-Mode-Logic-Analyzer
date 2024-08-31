@@ -1,0 +1,32 @@
+
+.program piodelay
+begin:
+    pull block    ; These two instructions take the blink duration
+    out y, 32     ; and store it in y
+forever:
+    wait 0 gpio 16
+    wait 1 gpio 16
+    mov x, y ; mov destination, (op), source
+lp1:
+    jmp x-- lp1   ; Delay for (x + 1) cycles, x is a 32 bit number
+    set pins, 1   ; Turn pin on
+    wait 1 gpio 16
+    wait 0 gpio 16
+    mov x, y
+lp2:
+    jmp x-- lp2
+    set pins, 0   ; Turn pin off
+jmp !OSRE forever ; did we get a new value?
+jmp begin ; nope, keep using the old one
+
+
+% c-sdk {
+
+void piodelay_program_init(PIO pio, uint sm, uint offset, uint pin) {
+   pio_gpio_init(pio, pin);
+   pio_sm_set_consecutive_pindirs(pio, sm, pin, 1, true);
+   pio_sm_config c = piodelay_program_get_default_config(offset);
+   sm_config_set_set_pins(&c, pin, 1);
+   pio_sm_init(pio, sm, offset, &c);
+}
+%}
