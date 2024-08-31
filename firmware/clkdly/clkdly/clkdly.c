@@ -32,16 +32,20 @@ int main() {
    // while (!tud_cdc_connected()) { sleep_ms(100);  }
 
     printf("Configuring PIO\n");
-    // PIO Blinking example
-    PIO pio_dly = pio0;
-    uint offset_dly = pio_add_program(pio_dly, &piodelay_program);
+    // PIO0: pio_stamper
+    // sm0: clock delay
+    // sm1: timestamp
+    const int sm_dly = 0;
+    const int sm_tstamp = 1;
+    PIO pio_stamper = pio0;
+    uint offset_dly = pio_add_program(pio_stamper, &piodelay_program);
     printf("Loaded clkdely program at %d\n", offset_dly);  
-    clkdly_make_it_happen(pio_dly, 0, offset_dly, 17, 3);
+    clkdly_make_it_happen(pio_stamper, sm_dly, offset_dly, 17, 3);
 
-    PIO pio_tstamps = pio1;
-    uint offset_tstamp = pio_add_program(pio_tstamps, &piotimestamps_program);
+    //PIO pio_tstamps = pio1;
+    uint offset_tstamp = pio_add_program(pio_stamper, &piotimestamps_program);
     printf("Loaded timestamp program at %d\n", offset_tstamp);  
-    piotimestamps_make_it_happen(pio_tstamps, 0, offset_tstamp);
+    piotimestamps_make_it_happen(pio_stamper, sm_tstamp, offset_tstamp);
     
         
 
@@ -49,17 +53,17 @@ int main() {
 
     printf("Looping forever\n");
     uint32_t delay=10000;
-    pio_dly->txf[0] = delay;
+    pio_stamper->txf[sm_dly] = delay;
 
     printf("Going into forever loop!\n");
     
     while (true) {    
         static uint32_t previous_counter_value = 0xFFFFFFFF;
-        uint32_t counter_value = pio_tstamps->rxf[0];
+        uint32_t counter_value = pio_stamper->rxf[sm_tstamp];
         uint32_t counter_difference = previous_counter_value - counter_value;
         uint32_t current_millis = millis();
         printf("[%zu] counter value: [%zu], diff: [%zu]\n", current_millis, counter_value, counter_difference);
         previous_counter_value = counter_value;
-        sleep_ms(500);
+        sleep_ms(1000);
     }
 }
