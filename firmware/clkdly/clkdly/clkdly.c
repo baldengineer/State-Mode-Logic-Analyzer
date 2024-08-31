@@ -6,12 +6,16 @@
 #include "piodelay.pio.h"
 #include "piotimestamps.pio.h"
 
-void piotimestamps_make_it_happen(PIO pio, uint sm, uint offset) {
+#ifdef CYW43_WL_GPIO_LED_PIN
+#include "pico/cyw43_arch.h"
+#endif
+
+void pio_timestamps_setup(PIO pio, uint sm, uint offset) {
     piotimestamps_program_init(pio, sm, offset);
     pio_sm_set_enabled(pio, sm, true);
 }
 
-void clkdly_make_it_happen(PIO pio, uint sm, uint offset, uint pin, uint freq) {
+void pio_clkdelay_setup(PIO pio, uint sm, uint offset, uint pin, uint freq) {
     pio_gpio_init(pio, 16);
     piodelay_program_init(pio, sm, offset, pin);
     pio_sm_set_enabled(pio, sm, true);
@@ -22,16 +26,55 @@ void clkdly_make_it_happen(PIO pio, uint sm, uint offset, uint pin, uint freq) {
     pio->txf[sm] = (20000);
 }
 
+// old habits
 static inline uint32_t millis() {
     return (time_us_32() / 1000);
+}
+
+int pico_led_init(void) {
+#if defined(PICO_DEFAULT_LED_PIN)
+    // A device like Pico that uses a GPIO for the LED will define PICO_DEFAULT_LED_PIN
+    // so we can use normal GPIO functionality to turn the led on and off
+    gpio_init(PICO_DEFAULT_LED_PIN);
+    gpio_set_dir(PICO_DEFAULT_LED_PIN, GPIO_OUT);
+    return PICO_OK;
+#elif defined(CYW43_WL_GPIO_LED_PIN)
+    // For Pico W devices we need to initialise the driver etc
+    return cyw43_arch_init();
+#endif
+}
+
+void pico_set_led(bool led_on) {
+#if defined(PICO_DEFAULT_LED_PIN)
+    // Just set the GPIO on or off
+    gpio_put(PICO_DEFAULT_LED_PIN, led_on);
+#elif defined(CYW43_WL_GPIO_LED_PIN)
+    // Ask the wifi "driver" to set the GPIO on or off
+    cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, led_on);
+#endif
+}
+
+void wait_for_usb() {
+    static bool first_run = true;
+    if (first_run) {
+        pico_led_init();
+        first_run = false;
+    }
+    while (!tud_cdc_connected()) { 
+        static bool led_state = true;
+        pico_set_led(led_state);
+        led_state = !led_state;
+        sleep_ms(100);  
+    } // wait for usb to connect
 }
 
 
 int main() {
     stdio_init_all();
-   // while (!tud_cdc_connected()) { sleep_ms(100);  }
+    wait_for_usb();
+    pico_set_led(true);
 
-    printf("Configuring PIO\n");
+    printf("Configuring PIO and SMs\n");
     // PIO0: pio_stamper
     // sm0: clock delay
     // sm1: timestamp
@@ -40,30 +83,25 @@ int main() {
     PIO pio_stamper = pio0;
     uint offset_dly = pio_add_program(pio_stamper, &piodelay_program);
     printf("Loaded clkdely program at %d\n", offset_dly);  
-    clkdly_make_it_happen(pio_stamper, sm_dly, offset_dly, 17, 3);
+    pio_clkdelay_setup(pio_stamper, sm_dly, offset_dly, 17, 3);
 
-    //PIO pio_tstamps = pio1;
     uint offset_tstamp = pio_add_program(pio_stamper, &piotimestamps_program);
     printf("Loaded timestamp program at %d\n", offset_tstamp);  
-    piotimestamps_make_it_happen(pio_stamper, sm_tstamp, offset_tstamp);
-    
-        
+    pio_timestamps_setup(pio_stamper, sm_tstamp, offset_tstamp);
 
-    // For more pio examples see https://github.com/raspberrypi/pico-examples/tree/master/pio
-
-    printf("Looping forever\n");
-    uint32_t delay=10000;
-    pio_stamper->txf[sm_dly] = delay;
+    uint32_t clk_delay_value=10000;
+    printf("Setting clock delay: [%zu]", clk_delay_value);
+    pio_stamper->txf[sm_dly] = clk_delay_value;
 
     printf("Going into forever loop!\n");
-    
     while (true) {    
-        static uint32_t previous_counter_value = 0xFFFFFFFF;
-        uint32_t counter_value = pio_stamper->rxf[sm_tstamp];
-        uint32_t counter_difference = previous_counter_value - counter_value;
-        uint32_t current_millis = millis();
+        static uint32_t previous_counter_value = 0xFFFFFFFF;   // show difference between sleeps
+        uint32_t counter_value = pio_stamper->rxf[sm_tstamp];  // get current buffer value (though it is probably delayed because of fifo?)
+        uint32_t counter_difference = previous_counter_value - counter_value;  
+        previous_counter_value = counter_value; // remember...
+        uint32_t current_millis = millis(); // display purposes
         printf("[%zu] counter value: [%zu], diff: [%zu]\n", current_millis, counter_value, counter_difference);
-        previous_counter_value = counter_value;
+        
         sleep_ms(1000);
     }
 }
