@@ -6,9 +6,14 @@
 #include "piodelay.pio.h"
 #include "piotimestamps.pio.h"
 
+#include "hardware/structs/systick.h"
+
 #ifdef CYW43_WL_GPIO_LED_PIN
 #include "pico/cyw43_arch.h"
 #endif
+
+/// this has some interrupt examples to consider
+// https://github.com/zenups/ZipZap/blob/master/main.cpp
 
 void pio_timestamps_setup(PIO pio, uint sm, uint offset) {
     piotimestamps_program_init(pio, sm, offset);
@@ -68,11 +73,25 @@ void wait_for_usb() {
     } // wait for usb to connect
 }
 
+    // systick_hw->csr = 0x5; //SysTick Control and Status Register
+    // systick_hw->rvr = 0x00FFFFFF; //SysTick Reload Value Register
+
+    
+
+    // uint32_t new, old, t0, t1;
+    // old=systick_hw->cvr;//SysTick Current Value Registe
+    // // SYST_CALIB SysTick Calibration value Register
 
 int main() {
     stdio_init_all();
     wait_for_usb();
     pico_set_led(true);
+
+    printf("Systick status:\n");
+    printf("systick_hw->csr: [%d]\n", systick_hw->csr);
+    printf("systick_hw->cvr: [%zu]\n", systick_hw->cvr);
+    printf("Setting csr to 0x5\n");
+    systick_hw->csr = 0x5;
 
     printf("Configuring PIO and SMs\n");
     // PIO0: pio_stamper
@@ -90,18 +109,29 @@ int main() {
     pio_timestamps_setup(pio_stamper, sm_tstamp, offset_tstamp);
 
     uint32_t clk_delay_value=10000;
-    printf("Setting clock delay: [%zu]", clk_delay_value);
+    printf("Setting clock delay: [%zu]\n", clk_delay_value);
     pio_stamper->txf[sm_dly] = clk_delay_value;
 
     printf("Going into forever loop!\n");
     while (true) {    
         static uint32_t previous_counter_value = 0xFFFFFFFF;   // show difference between sleeps
+        static uint32_t old_systick = 0;
+
         uint32_t counter_value = pio_stamper->rxf[sm_tstamp];  // get current buffer value (though it is probably delayed because of fifo?)
+
+        uint32_t current_millis = millis(); // display purposes
         uint32_t counter_difference = previous_counter_value - counter_value;  
         previous_counter_value = counter_value; // remember...
-        uint32_t current_millis = millis(); // display purposes
         printf("[%zu] counter value: [%zu], diff: [%zu]\n", current_millis, counter_value, counter_difference);
+        uint32_t current_systick = systick_hw->cvr;
+        uint32_t systick_difference = current_systick - old_systick;
+        old_systick = current_systick;
+        printf("systick_hw->cvr: [%zu], difference: [%zu]\n", current_systick, systick_difference);
         
-        sleep_ms(1000);
+
+        sleep_ms(100);
     }
 }
+
+
+

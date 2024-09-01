@@ -40,6 +40,7 @@ pico_set_program_version(clkdly "0.1")
 # Generate PIO header
 pico_generate_pio_header(clkdly ${CMAKE_CURRENT_LIST_DIR}/piodelay.pio)
 pico_generate_pio_header(clkdly ${CMAKE_CURRENT_LIST_DIR}/piotimestamps.pio)
+pico_generate_pio_header(clkdly ${CMAKE_CURRENT_LIST_DIR}/piosampler.pio)
 
 # Modify the below lines to enable/disable output over UART/USB
 pico_enable_stdio_uart(clkdly 0)
