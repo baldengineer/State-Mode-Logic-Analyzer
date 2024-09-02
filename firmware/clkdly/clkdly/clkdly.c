@@ -6,8 +6,6 @@
 #include "piodelay.pio.h"
 #include "piotimestamps.pio.h"
 
-#include "hardware/structs/systick.h"
-
 #ifdef CYW43_WL_GPIO_LED_PIN
 #include "pico/cyw43_arch.h"
 #endif
@@ -55,14 +53,6 @@ void pio_timestamps_setup(PIO pio, uint sm, uint offset) {
 volatile uint32_t value_from_pio_irq = 0;
 
 static void __not_in_flash_func(pio_irq0_handler)(void) {
-    // og example from arg001 on pi forums
-    // while (!pio_sm_is_rx_fifo_empty(PIO_PWM_CAPTURE, MY_SM))
-    // {
-    //     	uint32_t fv;
-
-    //     	fv = pio_sm_get(PIO_PWM_CAPTURE, MY_SM);
-	// 	do_something_with(fv);
-	// }
     pico_set_led(false);
     uint32_t fv;
     fv = pio_sm_get(pio_stamper, sm_tstamp);
