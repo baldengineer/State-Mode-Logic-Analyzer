@@ -66,7 +66,7 @@ static void __not_in_flash_func(pio_irq0_handler)(void) {
     uint32_t fv;
     fv = pio_sm_get(pio_stamper, sm_tstamp);
     value_from_pio_irq = fv;
-   
+    pio_interrupt_clear(pio_stamper, 0);
     return;
 }
 
@@ -75,15 +75,15 @@ void pio_clkdelay_setup(PIO pio, uint sm, uint offset, uint pin, uint freq) {
     piodelay_program_init(pio, sm, offset, pin);
 
     printf("Configuring IRQ handler\n");
-    irq_set_exclusive_handler(pis_interrupt0, pio_irq0_handler);
+    irq_set_exclusive_handler(PIO0_IRQ_0, pio_irq0_handler);
     //irq_add_shared_handler(pis_interrupt0, pio_irq0_handler, PICO_SHARED_IRQ_HANDLER_DEFAULT_ORDER_PRIORITY);
     // Enable FIFO interrupt in the PIO itself
     pio_set_irq0_source_enabled(pio, pis_interrupt0, true);
-    printf("IRQ handler state: [%d]\n", irq_get_exclusive_handler(pis_interrupt0));
+    printf("IRQ handler state: [%d]\n", irq_get_exclusive_handler(PIO0_IRQ_0));
             // getting 536871105 which is 0x2000 00C1
     // Enable IRQ in the NVIC
     irq_set_enabled(PIO0_IRQ_0, true);
-  //  irq_set_enabled(pis_interrupt0, true);
+   // irq_set_enabled(pis_interrupt0, true);
 
     printf("Enabling clkdelay PIO\n");
     pio_sm_set_enabled(pio, sm, true);
@@ -161,6 +161,8 @@ int main() {
         if (prev_irq_value != value_from_pio_irq) {
             prev_irq_value = value_from_pio_irq;
             printf("!!! Value from IRQ: [%zu]\n", value_from_pio_irq);
+            
+            pico_set_led(true);
         }
 
         sleep_ms(1000);

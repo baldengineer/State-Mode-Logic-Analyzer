@@ -4,7 +4,7 @@ begin:
     pull block    ; These two instructions take the blink duration
     out y, 32     ; and store it in y
 forever:
-    irq clear 0
+    ;irq clear 0
     wait 0 gpio 16
     wait 1 gpio 16
     mov x, y ; mov destination, (op), source
