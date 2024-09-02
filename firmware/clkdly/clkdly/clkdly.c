@@ -17,7 +17,7 @@
 const int sm_dly = 0;
 const int sm_tstamp = 1;
 PIO pio_stamper = pio0;
-uint32_t clk_delay_value=5;
+uint32_t clk_delay_value=10;
 
 /// this has some interrupt examples to consider
 // https://github.com/zenups/ZipZap/blob/master/main.cpp
@@ -53,10 +53,8 @@ void pio_timestamps_setup(PIO pio, uint sm, uint offset) {
 volatile uint32_t value_from_pio_irq = 0;
 
 static void __not_in_flash_func(pio_irq0_handler)(void) {
-    pico_set_led(false);
     uint32_t fv;
-    fv = pio_sm_get(pio_stamper, sm_tstamp);
-    value_from_pio_irq = fv;
+    value_from_pio_irq = pio_sm_get(pio_stamper, sm_tstamp);
     pio_stamper->txf[sm_dly] = clk_delay_value; // do we need to reset this?
     pio_interrupt_clear(pio_stamper, 0);
     return;
@@ -68,22 +66,16 @@ void pio_clkdelay_setup(PIO pio, uint sm, uint offset, uint pin, uint freq) {
 
     printf("Configuring IRQ handler\n");
     irq_set_exclusive_handler(PIO0_IRQ_0, pio_irq0_handler);
-    //irq_add_shared_handler(pis_interrupt0, pio_irq0_handler, PICO_SHARED_IRQ_HANDLER_DEFAULT_ORDER_PRIORITY);
+    
     // Enable FIFO interrupt in the PIO itself
     pio_set_irq0_source_enabled(pio, pis_interrupt0, true);
-    printf("IRQ handler state: [%d]\n", irq_get_exclusive_handler(PIO0_IRQ_0));
-            // getting 536871105 which is 0x2000 00C1
     // Enable IRQ in the NVIC
     irq_set_enabled(PIO0_IRQ_0, true);
-   // irq_set_enabled(pis_interrupt0, true);
-
+   
     printf("Enabling clkdelay PIO\n");
     pio_sm_set_enabled(pio, sm, true);
    
-    // PIO counter program takes 3 more cycles in total than we pass as
-    // input (wait for n + 1; mov; jmp)
-    //pio->txf[sm] = (125000000 / (2 * freq)) - 3;
-    pio->txf[sm] = (200);
+    pio->txf[sm] = (clk_delay_value);
 }
 
 // old habits
@@ -122,9 +114,6 @@ int main() {
     printf("Setting clock delay: [%zu]\n", clk_delay_value);
     pio_stamper->txf[sm_dly] = clk_delay_value;
 
-   // printf("IRQ0_INTE: %d\n", pio_stamper->irq_ctrl);
-
-
     printf("Going into forever loop!\n");
     while (true) {    
         static uint32_t previous_counter_value = 0xFFFFFFFF;   // show difference between sleeps
@@ -140,8 +129,7 @@ int main() {
         if (prev_irq_value != value_from_pio_irq) {
             prev_irq_value = value_from_pio_irq;
             printf("!!! Value from IRQ: [%zu]\n", value_from_pio_irq);
-            //pio_stamper->txf[sm_dly] = clk_delay_value; // moved to ISR
-            pico_set_led(true);
+            //pico_set_led(true);
         }
 
         sleep_ms(1000);

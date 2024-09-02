@@ -11,7 +11,7 @@ forever:
 lp1:
     jmp x-- lp1   ; Delay for (x + 1) cycles, x is a 32 bit number
     set pins, 1   ; Turn pin on
-    irq nowait 0
+    irq set 0
     wait 1 gpio 16
     wait 0 gpio 16
     mov x, y
