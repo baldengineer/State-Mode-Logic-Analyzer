@@ -133,7 +133,7 @@ int main() {
     printf("Loaded timestamp program at %d\n", offset_tstamp);  
     pio_timestamps_setup(pio_stamper, sm_tstamp, offset_tstamp);
 
-    uint32_t clk_delay_value=10000;
+    uint32_t clk_delay_value=200;
     printf("Setting clock delay: [%zu]\n", clk_delay_value);
     pio_stamper->txf[sm_dly] = clk_delay_value;
 
@@ -161,7 +161,7 @@ int main() {
         if (prev_irq_value != value_from_pio_irq) {
             prev_irq_value = value_from_pio_irq;
             printf("!!! Value from IRQ: [%zu]\n", value_from_pio_irq);
-            
+            pio_stamper->txf[sm_dly] = clk_delay_value; // do we need to reset this?
             pico_set_led(true);
         }
 
