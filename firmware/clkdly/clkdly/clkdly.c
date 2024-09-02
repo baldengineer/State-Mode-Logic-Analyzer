@@ -19,6 +19,7 @@
 const int sm_dly = 0;
 const int sm_tstamp = 1;
 PIO pio_stamper = pio0;
+uint32_t clk_delay_value=5;
 
 /// this has some interrupt examples to consider
 // https://github.com/zenups/ZipZap/blob/master/main.cpp
@@ -66,6 +67,7 @@ static void __not_in_flash_func(pio_irq0_handler)(void) {
     uint32_t fv;
     fv = pio_sm_get(pio_stamper, sm_tstamp);
     value_from_pio_irq = fv;
+    pio_stamper->txf[sm_dly] = clk_delay_value; // do we need to reset this?
     pio_interrupt_clear(pio_stamper, 0);
     return;
 }
@@ -118,12 +120,6 @@ int main() {
     wait_for_usb();
     pico_set_led(true);
 
-    printf("Systick status:\n");
-    printf("systick_hw->csr: [%d]\n", systick_hw->csr);
-    printf("systick_hw->cvr: [%zu]\n", systick_hw->cvr);
-    printf("Setting csr to 0x5\n");
-    systick_hw->csr = 0x5;
-
     printf("Configuring PIO and SMs\n");
     uint offset_dly = pio_add_program(pio_stamper, &piodelay_program);
     printf("Loaded clkdely program at %d\n", offset_dly);  
@@ -133,7 +129,6 @@ int main() {
     printf("Loaded timestamp program at %d\n", offset_tstamp);  
     pio_timestamps_setup(pio_stamper, sm_tstamp, offset_tstamp);
 
-    uint32_t clk_delay_value=200;
     printf("Setting clock delay: [%zu]\n", clk_delay_value);
     pio_stamper->txf[sm_dly] = clk_delay_value;
 
@@ -143,7 +138,6 @@ int main() {
     printf("Going into forever loop!\n");
     while (true) {    
         static uint32_t previous_counter_value = 0xFFFFFFFF;   // show difference between sleeps
-        static uint32_t old_systick = 0;
         static uint32_t prev_irq_value = 0;
 
         uint32_t counter_value = pio_stamper->rxf[sm_tstamp];  // get current buffer value (though it is probably delayed because of fifo?)
@@ -152,16 +146,11 @@ int main() {
         uint32_t counter_difference = previous_counter_value - counter_value;  
         previous_counter_value = counter_value; // remember...
         printf("[%zu] counter value: [%zu], diff: [%zu]\n", current_millis, counter_value, counter_difference);
-        uint32_t current_systick = systick_hw->cvr;
-        uint32_t systick_difference = current_systick - old_systick;
-        old_systick = current_systick;
-        printf("systick_hw->cvr: [%zu], difference: [%zu]\n", current_systick, systick_difference);
-
 
         if (prev_irq_value != value_from_pio_irq) {
             prev_irq_value = value_from_pio_irq;
             printf("!!! Value from IRQ: [%zu]\n", value_from_pio_irq);
-            pio_stamper->txf[sm_dly] = clk_delay_value; // do we need to reset this?
+            //pio_stamper->txf[sm_dly] = clk_delay_value; // moved to ISR
             pico_set_led(true);
         }
 
