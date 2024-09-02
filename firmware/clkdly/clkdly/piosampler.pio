@@ -1,10 +1,10 @@
 .program piosampler
 
-.wrap_target
-	wait 1 irq 0 ; wait for valid clock from delay
-	in PINS, 8
-	push noblock
-.wrap
+; .wrap_target
+; 	wait 1 irq 0 ; wait for valid clock from delay
+; 	in PINS, 8
+; 	push noblock
+; .wrap
 
 
 

@@ -12,29 +12,16 @@
 #include "pico/cyw43_arch.h"
 #endif
 
+
+// PIO0: pio_stamper
+// sm0: clock delay
+// sm1: timestamp
+const int sm_dly = 0;
+const int sm_tstamp = 1;
+PIO pio_stamper = pio0;
+
 /// this has some interrupt examples to consider
 // https://github.com/zenups/ZipZap/blob/master/main.cpp
-
-void pio_timestamps_setup(PIO pio, uint sm, uint offset) {
-    piotimestamps_program_init(pio, sm, offset);
-    pio_sm_set_enabled(pio, sm, true);
-}
-
-void pio_clkdelay_setup(PIO pio, uint sm, uint offset, uint pin, uint freq) {
-    pio_gpio_init(pio, 16);
-    piodelay_program_init(pio, sm, offset, pin);
-    pio_sm_set_enabled(pio, sm, true);
-   
-    // PIO counter program takes 3 more cycles in total than we pass as
-    // input (wait for n + 1; mov; jmp)
-    //pio->txf[sm] = (125000000 / (2 * freq)) - 3;
-    pio->txf[sm] = (20000);
-}
-
-// old habits
-static inline uint32_t millis() {
-    return (time_us_32() / 1000);
-}
 
 int pico_led_init(void) {
 #if defined(PICO_DEFAULT_LED_PIN)
@@ -59,6 +46,59 @@ void pico_set_led(bool led_on) {
 #endif
 }
 
+void pio_timestamps_setup(PIO pio, uint sm, uint offset) {
+    piotimestamps_program_init(pio, sm, offset);
+    pio_sm_set_enabled(pio, sm, true);
+}
+
+volatile uint32_t value_from_pio_irq = 0;
+
+static void __not_in_flash_func(pio_irq0_handler)(void) {
+    // og example from arg001 on pi forums
+    // while (!pio_sm_is_rx_fifo_empty(PIO_PWM_CAPTURE, MY_SM))
+    // {
+    //     	uint32_t fv;
+
+    //     	fv = pio_sm_get(PIO_PWM_CAPTURE, MY_SM);
+	// 	do_something_with(fv);
+	// }
+    pico_set_led(false);
+    uint32_t fv;
+    fv = pio_sm_get(pio_stamper, sm_tstamp);
+    value_from_pio_irq = fv;
+   
+    return;
+}
+
+void pio_clkdelay_setup(PIO pio, uint sm, uint offset, uint pin, uint freq) {
+    pio_gpio_init(pio, 16);
+    piodelay_program_init(pio, sm, offset, pin);
+
+    printf("Configuring IRQ handler\n");
+    irq_set_exclusive_handler(pis_interrupt0, pio_irq0_handler);
+    //irq_add_shared_handler(pis_interrupt0, pio_irq0_handler, PICO_SHARED_IRQ_HANDLER_DEFAULT_ORDER_PRIORITY);
+    // Enable FIFO interrupt in the PIO itself
+    pio_set_irq0_source_enabled(pio, pis_interrupt0, true);
+    printf("IRQ handler state: [%d]\n", irq_get_exclusive_handler(pis_interrupt0));
+            // getting 536871105 which is 0x2000 00C1
+    // Enable IRQ in the NVIC
+    irq_set_enabled(PIO0_IRQ_0, true);
+  //  irq_set_enabled(pis_interrupt0, true);
+
+    printf("Enabling clkdelay PIO\n");
+    pio_sm_set_enabled(pio, sm, true);
+   
+    // PIO counter program takes 3 more cycles in total than we pass as
+    // input (wait for n + 1; mov; jmp)
+    //pio->txf[sm] = (125000000 / (2 * freq)) - 3;
+    pio->txf[sm] = (200);
+}
+
+// old habits
+static inline uint32_t millis() {
+    return (time_us_32() / 1000);
+}
+
 void wait_for_usb() {
     static bool first_run = true;
     if (first_run) {
@@ -73,15 +113,6 @@ void wait_for_usb() {
     } // wait for usb to connect
 }
 
-    // systick_hw->csr = 0x5; //SysTick Control and Status Register
-    // systick_hw->rvr = 0x00FFFFFF; //SysTick Reload Value Register
-
-    
-
-    // uint32_t new, old, t0, t1;
-    // old=systick_hw->cvr;//SysTick Current Value Registe
-    // // SYST_CALIB SysTick Calibration value Register
-
 int main() {
     stdio_init_all();
     wait_for_usb();
@@ -94,12 +125,6 @@ int main() {
     systick_hw->csr = 0x5;
 
     printf("Configuring PIO and SMs\n");
-    // PIO0: pio_stamper
-    // sm0: clock delay
-    // sm1: timestamp
-    const int sm_dly = 0;
-    const int sm_tstamp = 1;
-    PIO pio_stamper = pio0;
     uint offset_dly = pio_add_program(pio_stamper, &piodelay_program);
     printf("Loaded clkdely program at %d\n", offset_dly);  
     pio_clkdelay_setup(pio_stamper, sm_dly, offset_dly, 17, 3);
@@ -112,10 +137,14 @@ int main() {
     printf("Setting clock delay: [%zu]\n", clk_delay_value);
     pio_stamper->txf[sm_dly] = clk_delay_value;
 
+   // printf("IRQ0_INTE: %d\n", pio_stamper->irq_ctrl);
+
+
     printf("Going into forever loop!\n");
     while (true) {    
         static uint32_t previous_counter_value = 0xFFFFFFFF;   // show difference between sleeps
         static uint32_t old_systick = 0;
+        static uint32_t prev_irq_value = 0;
 
         uint32_t counter_value = pio_stamper->rxf[sm_tstamp];  // get current buffer value (though it is probably delayed because of fifo?)
 
@@ -127,11 +156,13 @@ int main() {
         uint32_t systick_difference = current_systick - old_systick;
         old_systick = current_systick;
         printf("systick_hw->cvr: [%zu], difference: [%zu]\n", current_systick, systick_difference);
-        
 
-        sleep_ms(100);
+
+        if (prev_irq_value != value_from_pio_irq) {
+            prev_irq_value = value_from_pio_irq;
+            printf("!!! Value from IRQ: [%zu]\n", value_from_pio_irq);
+        }
+
+        sleep_ms(1000);
     }
 }
-
-
-

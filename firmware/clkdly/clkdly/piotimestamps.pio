@@ -7,7 +7,7 @@ plusone:
 forever:
 	;mov <destination>, ( op ) <source>
 	mov ISR, X
-	;push noblock
+	push noblock
 	jmp X-- plusone
 	jmp forever
 
