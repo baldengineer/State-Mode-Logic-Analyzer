@@ -12,6 +12,195 @@
 		(comment 1 "J. Lewis")
 	)
 	(lib_symbols
+		(symbol "Analog_DAC:MCP4725xxx-xCH"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -6.35 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MCP4725xxx-xCH"
+				(at 8.89 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/22039d.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "12-bit Digital-to-Analog Converter, integrated EEPROM, I2C interface, SOT-23-6"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "dac twi"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MCP4725xxx-xCH_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "MCP4725xxx-xCH_1_1"
+				(pin output line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "A0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector:USB_C_Receptacle_USB2.0"
 			(pin_names
 				(offset 1.016)
@@ -3932,369 +4121,6 @@
 				)
 			)
 		)
-		(symbol "My Library:AD5241"
-			(pin_names
-				(offset 0.762)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -7.62 11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "AD5241"
-				(at 5.588 11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
-				(at 0 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ad5241_5242.pdf"
-				(at 2.54 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Digital potentiometer, 256 position, single output, I2C interface"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "digital potentiometer"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TSSOP*4.4x5mm*P0.65mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "AD5241_0_1"
-				(rectangle
-					(start -10.16 10.16)
-					(end 10.16 -10.16)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.985 5.08) (xy 6.35 5.08) (xy 5.715 5.08) (xy 6.35 5.715) (xy 6.35 4.445) (xy 5.715 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.985 7.62) (xy 5.715 7.62) (xy 5.08 6.985) (xy 5.715 6.35) (xy 5.08 5.715) (xy 5.715 5.08)
-						(xy 5.08 4.445) (xy 5.715 3.81) (xy 5.08 3.175) (xy 5.715 2.54) (xy 6.985 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "AD5241_1_1"
-				(pin passive line
-					(at 12.7 7.62 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -12.7 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 2.54 -12.7 90)
-					(length 2.54)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 -7.62 180)
-					(length 2.54)
-					(name "O2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 2.54 9.525 270)
-					(length 2.54) hide
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 -5.08 180)
-					(length 2.54)
-					(name "O1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 5.08 180)
-					(length 2.54)
-					(name "W"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 2.54 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 12.7 270)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 0 0)
-					(length 2.54)
-					(name "~{SHDN}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 7.62 0)
-					(length 2.54)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 5.08 0)
-					(length 2.54)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 -5.08 0)
-					(length 2.54)
-					(name "AD0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 -7.62 0)
-					(length 2.54)
-					(name "AD1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "My Library:SWD_with_FTSH-105-XX-X-DV"
 			(pin_names
 				(offset 1.016)
@@ -6288,142 +6114,6 @@
 				)
 			)
 		)
-		(symbol "Regulator_Linear:NCP1117-ADJ_SOT223"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -3.81 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "NCP1117-ADJ_SOT223"
-				(at 0 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF"
-				(at 2.54 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "1A Low drop-out regulator, Adjustable Output 1.25 - 18.8V, SOT-223"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "REGULATOR LDO 12V"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?223*TabPin2*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "NCP1117-ADJ_SOT223_0_1"
-				(rectangle
-					(start -5.08 -5.08)
-					(end 5.08 1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "NCP1117-ADJ_SOT223_1_1"
-				(pin input line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "ADJ"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "VO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "VI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers hide)
 			(pin_names
@@ -7003,12 +6693,6 @@
 		)
 	)
 	(junction
-		(at 307.34 368.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "089fcc0b-6e26-43d6-abf4-e244ccdadb5f")
-	)
-	(junction
 		(at 264.16 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7021,28 +6705,22 @@
 		(uuid "36ff7e0a-5b63-4450-8148-fb2b4b14cf66")
 	)
 	(junction
+		(at 381 364.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3fa21184-96d6-4819-b2d4-0e2a83c195ab")
+	)
+	(junction
 		(at 513.08 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "45d2de6c-46db-4883-b58d-f79ca0f2449c")
 	)
 	(junction
-		(at 363.22 381)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "465bdd96-3fc1-4910-bcdd-c46333ebcaef")
-	)
-	(junction
 		(at 452.12 382.27)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "56a47dc4-cb0d-4993-962d-6bf4cc8c8832")
-	)
-	(junction
-		(at 316.23 342.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5cfc526c-6ff0-481d-baaa-c797bcfc6d14")
 	)
 	(junction
 		(at 264.16 120.65)
@@ -7069,28 +6747,16 @@
 		(uuid "8cad0b3b-93dc-4df2-8c96-d68d16b9dd4e")
 	)
 	(junction
-		(at 351.79 342.9)
+		(at 373.38 364.49)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9c0b5737-b915-4e13-8def-60b0e0a1238f")
-	)
-	(junction
-		(at 373.38 373.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a5c4584a-92fa-4961-8e4f-ecc742b82131")
+		(uuid "926dfb05-6b35-4569-a500-50f4ac66f6bd")
 	)
 	(junction
 		(at 513.08 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b434e46c-dbfe-4f00-98fb-ee439f993f43")
-	)
-	(junction
-		(at 347.98 388.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c91a6bd3-dfd9-4b31-90b0-849b835d920e")
 	)
 	(junction
 		(at 494.03 106.045)
@@ -7105,40 +6771,16 @@
 		(uuid "dc745340-b361-491e-91f0-98d06204034f")
 	)
 	(junction
-		(at 316.23 368.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dd943860-246b-4c09-be11-566cb05ba146")
-	)
-	(junction
-		(at 293.37 342.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e484fbd1-a2b4-4231-b5d7-ac11020fad0f")
-	)
-	(junction
 		(at 397.51 209.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e4c97bae-5631-435a-a965-87bba0e8932e")
 	)
 	(junction
-		(at 325.12 342.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e9b8c8fb-7ce4-4b4c-872c-e2792c60db24")
-	)
-	(junction
 		(at 521.97 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f44a7f58-84ac-4f34-b1ed-2ffa000fc165")
-	)
-	(junction
-		(at 334.01 342.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f6e14f49-f4f5-4d72-adb2-a370e8401532")
 	)
 	(no_connect
 		(at 317.5 120.65)
@@ -7224,16 +6866,6 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 370.84) (xy 316.23 368.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02f27b36-246b-4450-9f48-189127e7f11a")
-	)
-	(wire
-		(pts
 			(xy 27.94 303.53) (xy 36.83 303.53)
 		)
 		(stroke
@@ -7261,16 +6893,6 @@
 			(type default)
 		)
 		(uuid "0636837d-1a02-4a64-bb9a-6fa824a132ba")
-	)
-	(wire
-		(pts
-			(xy 360.68 368.3) (xy 370.84 368.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "064a3e83-e061-43d4-ac1b-1f0ee702215e")
 	)
 	(wire
 		(pts
@@ -7321,16 +6943,6 @@
 			(type default)
 		)
 		(uuid "07650db1-2e19-4ff9-b157-7599222381e1")
-	)
-	(wire
-		(pts
-			(xy 347.98 358.14) (xy 347.98 360.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "080c325b-fc5e-459c-a8a8-66a07189b9dc")
 	)
 	(wire
 		(pts
@@ -7404,6 +7016,16 @@
 	)
 	(wire
 		(pts
+			(xy 339.09 367.03) (xy 339.09 369.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e3193aa-0da0-4aa1-b0da-d076db21254c")
+	)
+	(wire
+		(pts
 			(xy 107.95 245.11) (xy 97.79 245.11)
 		)
 		(stroke
@@ -7411,16 +7033,6 @@
 			(type default)
 		)
 		(uuid "10911e87-2e85-4330-a275-2fdcce5bb760")
-	)
-	(wire
-		(pts
-			(xy 316.23 368.3) (xy 335.28 368.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1262b682-9d13-4071-9352-f5ee70318cca")
 	)
 	(wire
 		(pts
@@ -7484,13 +7096,13 @@
 	)
 	(wire
 		(pts
-			(xy 363.22 381) (xy 363.22 383.54)
+			(xy 351.79 355.6) (xy 351.79 356.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1965f871-31ae-4986-8315-84ad1ad3cde3")
+		(uuid "19dbe7ee-7aa3-4934-9201-4a28724fa968")
 	)
 	(wire
 		(pts
@@ -7501,16 +7113,6 @@
 			(type default)
 		)
 		(uuid "1a3b941a-ab57-4e7b-8dd9-199793654677")
-	)
-	(wire
-		(pts
-			(xy 325.12 342.9) (xy 325.12 345.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ea087f5-05a3-4a91-97e5-0892482aced4")
 	)
 	(wire
 		(pts
@@ -7634,16 +7236,6 @@
 	)
 	(wire
 		(pts
-			(xy 307.34 368.3) (xy 316.23 368.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c36a1c7-f6e4-4389-98ac-ad2f121b6a71")
-	)
-	(wire
-		(pts
 			(xy 92.71 172.72) (xy 83.82 172.72)
 		)
 		(stroke
@@ -7671,6 +7263,26 @@
 			(type default)
 		)
 		(uuid "2d8d9266-7384-49c9-a798-43c781ac5d64")
+	)
+	(wire
+		(pts
+			(xy 328.93 361.95) (xy 341.63 361.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e9c21f4-ebf2-4fe9-b521-99393e28164a")
+	)
+	(wire
+		(pts
+			(xy 351.79 372.11) (xy 351.79 373.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "307aa662-04a7-4b50-ac41-eb29813a7cbd")
 	)
 	(wire
 		(pts
@@ -7741,16 +7353,6 @@
 			(type default)
 		)
 		(uuid "35d44ed5-52f3-4569-ac1d-f249b5b4c8f9")
-	)
-	(wire
-		(pts
-			(xy 334.01 342.9) (xy 351.79 342.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "364dc2a7-9bc7-4316-8994-8d67a876e779")
 	)
 	(wire
 		(pts
@@ -7901,16 +7503,6 @@
 			(type default)
 		)
 		(uuid "445b2b27-fa42-493b-b60d-f8f0be3bf02d")
-	)
-	(wire
-		(pts
-			(xy 363.22 339.09) (xy 363.22 342.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "44ed2940-8e05-41b6-a0c3-fe61be2daad4")
 	)
 	(wire
 		(pts
@@ -8134,16 +7726,6 @@
 	)
 	(wire
 		(pts
-			(xy 307.34 368.3) (xy 307.34 350.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5985e7e1-8948-4f7d-81bb-a50fd4ec78f4")
-	)
-	(wire
-		(pts
 			(xy 82.55 349.25) (xy 91.44 349.25)
 		)
 		(stroke
@@ -8181,16 +7763,6 @@
 			(type default)
 		)
 		(uuid "5be040f5-aec7-415b-aafb-1c6ad8fa62b1")
-	)
-	(wire
-		(pts
-			(xy 360.68 378.46) (xy 363.22 378.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c33f412-a33f-42d6-bb6b-19d27a50e352")
 	)
 	(wire
 		(pts
@@ -8394,16 +7966,6 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 342.9) (xy 360.68 342.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c26952a-b59a-4885-9805-f8faa9199ede")
-	)
-	(wire
-		(pts
 			(xy 519.43 73.66) (xy 521.97 73.66)
 		)
 		(stroke
@@ -8431,16 +7993,6 @@
 			(type default)
 		)
 		(uuid "6d76df85-6649-486c-8216-5d569c499f60")
-	)
-	(wire
-		(pts
-			(xy 299.72 342.9) (xy 293.37 342.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d9ad0e6-20e6-46a4-8462-9103019a1029")
 	)
 	(wire
 		(pts
@@ -8574,16 +8126,6 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 342.9) (xy 316.23 349.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7be1e020-fd2a-4210-a74a-4082a2106d55")
-	)
-	(wire
-		(pts
 			(xy 135.89 260.35) (xy 128.27 260.35)
 		)
 		(stroke
@@ -8654,16 +8196,6 @@
 	)
 	(wire
 		(pts
-			(xy 345.44 388.62) (xy 345.44 386.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "813eac1d-b40d-4344-93a2-0d5d462316a0")
-	)
-	(wire
-		(pts
 			(xy 342.9 113.03) (xy 360.68 113.03)
 		)
 		(stroke
@@ -8701,16 +8233,6 @@
 			(type default)
 		)
 		(uuid "828baa7b-196b-410a-8e59-c3658733691e")
-	)
-	(wire
-		(pts
-			(xy 363.22 378.46) (xy 363.22 381)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82fea957-176e-43e8-86a1-9b745dc36786")
 	)
 	(wire
 		(pts
@@ -8824,16 +8346,6 @@
 	)
 	(wire
 		(pts
-			(xy 360.68 365.76) (xy 370.84 365.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88e056e2-8d5e-4a36-ad3b-7dc29fa964e9")
-	)
-	(wire
-		(pts
 			(xy 36.83 280.67) (xy 30.48 280.67)
 		)
 		(stroke
@@ -8854,16 +8366,6 @@
 	)
 	(wire
 		(pts
-			(xy 325.12 342.9) (xy 334.01 342.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89d4e473-614a-409f-b4fb-bb1411b2aa10")
-	)
-	(wire
-		(pts
 			(xy 82.55 328.93) (xy 91.44 328.93)
 		)
 		(stroke
@@ -8871,6 +8373,16 @@
 			(type default)
 		)
 		(uuid "8b62dadc-7420-4a67-afa9-af19f4ca7b29")
+	)
+	(wire
+		(pts
+			(xy 328.93 364.49) (xy 341.63 364.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bb68497-a81a-44ae-b50e-2ead5b2c8959")
 	)
 	(wire
 		(pts
@@ -8914,13 +8426,13 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 354.33) (xy 316.23 368.3)
+			(xy 392.43 360.68) (xy 392.43 364.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9252526f-c46c-43f5-84c3-7b94d342090d")
+		(uuid "9164d9d4-dff6-4fd3-8e16-c99c6eaecd1c")
 	)
 	(wire
 		(pts
@@ -8951,6 +8463,16 @@
 			(type default)
 		)
 		(uuid "9512bda3-d6f9-4e3a-810b-1ab747e0cc55")
+	)
+	(wire
+		(pts
+			(xy 373.38 373.38) (xy 373.38 374.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "956b7c8a-42ca-4d64-a443-27ea71a3c911")
 	)
 	(wire
 		(pts
@@ -9044,13 +8566,13 @@
 	)
 	(wire
 		(pts
-			(xy 325.12 350.52) (xy 325.12 353.06)
+			(xy 381 364.49) (xy 389.89 364.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9c01b389-b367-40a6-a0b3-ce530d16ba95")
+		(uuid "9ad2dfa6-b694-497e-baa9-9de059984098")
 	)
 	(wire
 		(pts
@@ -9144,13 +8666,13 @@
 	)
 	(wire
 		(pts
-			(xy 335.28 370.84) (xy 328.93 370.84)
+			(xy 381 372.11) (xy 381 374.65)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a3dbdab3-b57b-4db9-b251-1e214aa5a8a7")
+		(uuid "a4aebc7a-8d2a-410e-982d-0f2051d85d9a")
 	)
 	(wire
 		(pts
@@ -9274,26 +8796,6 @@
 	)
 	(wire
 		(pts
-			(xy 373.38 373.38) (xy 374.65 373.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0e4c629-0498-4a39-b7e4-619affdac576")
-	)
-	(wire
-		(pts
-			(xy 360.68 373.38) (xy 373.38 373.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b19b5af2-d6bb-486d-98d9-489f8d9f1cf6")
-	)
-	(wire
-		(pts
 			(xy 342.9 151.13) (xy 360.68 151.13)
 		)
 		(stroke
@@ -9314,13 +8816,13 @@
 	)
 	(wire
 		(pts
-			(xy 347.98 388.62) (xy 347.98 386.08)
+			(xy 361.95 364.49) (xy 364.49 364.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b4285ad8-afd8-4b9b-9296-9014086165f1")
+		(uuid "b3dce812-b3dd-4f4f-ad38-0d99af43e06a")
 	)
 	(wire
 		(pts
@@ -9381,16 +8883,6 @@
 			(type default)
 		)
 		(uuid "b6300c31-b31f-48e9-b680-dc82978ce113")
-	)
-	(wire
-		(pts
-			(xy 347.98 388.62) (xy 347.98 392.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b8885f87-e193-43dd-8a21-f38a272f3bab")
 	)
 	(wire
 		(pts
@@ -9474,6 +8966,16 @@
 	)
 	(wire
 		(pts
+			(xy 369.57 364.49) (xy 373.38 364.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be9e0130-f5b3-475b-aede-3538fc258eb5")
+	)
+	(wire
+		(pts
 			(xy 327.66 25.4) (xy 334.01 25.4)
 		)
 		(stroke
@@ -9501,16 +9003,6 @@
 			(type default)
 		)
 		(uuid "c16a6ac1-eaa3-48d6-bc6c-e0460fcff9ef")
-	)
-	(wire
-		(pts
-			(xy 334.01 342.9) (xy 334.01 346.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c23f78b3-f10d-4b3f-b275-296140fcfddf")
 	)
 	(wire
 		(pts
@@ -9574,6 +9066,16 @@
 	)
 	(wire
 		(pts
+			(xy 341.63 367.03) (xy 339.09 367.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4861063-3b79-4e48-8c9e-8248db5178b9")
+	)
+	(wire
+		(pts
 			(xy 96.52 318.77) (xy 106.68 318.77)
 		)
 		(stroke
@@ -9581,6 +9083,16 @@
 			(type default)
 		)
 		(uuid "c4976f16-395c-4708-b6ec-1411c8a988d8")
+	)
+	(wire
+		(pts
+			(xy 373.38 364.49) (xy 373.38 368.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4f0ecf6-770e-42e1-82a5-8665b579af23")
 	)
 	(wire
 		(pts
@@ -9654,13 +9166,13 @@
 	)
 	(wire
 		(pts
-			(xy 314.96 342.9) (xy 316.23 342.9)
+			(xy 394.97 363.22) (xy 394.97 364.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cbab1aa8-cef3-41d7-b5d3-eac8914aa107")
+		(uuid "cd046b2e-1c36-4ec0-923c-a835c3120735")
 	)
 	(wire
 		(pts
@@ -9744,13 +9256,13 @@
 	)
 	(wire
 		(pts
-			(xy 360.68 381) (xy 363.22 381)
+			(xy 381 364.49) (xy 381 367.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d3d03f09-067b-4f1d-b358-c854398131dc")
+		(uuid "d43b3ef3-6e7b-47ba-a4c9-4a97d3f1db16")
 	)
 	(wire
 		(pts
@@ -9864,6 +9376,16 @@
 	)
 	(wire
 		(pts
+			(xy 373.38 364.49) (xy 381 364.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db3d95a7-7a07-48d9-b80a-4e83a171b26d")
+	)
+	(wire
+		(pts
 			(xy 342.9 102.87) (xy 360.68 102.87)
 		)
 		(stroke
@@ -9871,16 +9393,6 @@
 			(type default)
 		)
 		(uuid "dc1c2655-12db-480a-907d-44d05f484025")
-	)
-	(wire
-		(pts
-			(xy 345.44 388.62) (xy 347.98 388.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dce7d22e-4881-45e3-b927-4c64b6904a13")
 	)
 	(wire
 		(pts
@@ -10064,16 +9576,6 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 375.92) (xy 316.23 377.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e9684b40-132d-482c-9ff5-878e1a65909e")
-	)
-	(wire
-		(pts
 			(xy 342.9 143.51) (xy 360.68 143.51)
 		)
 		(stroke
@@ -10111,16 +9613,6 @@
 			(type default)
 		)
 		(uuid "edd9d3e0-cf31-4012-9407-175dd6b66db4")
-	)
-	(wire
-		(pts
-			(xy 316.23 342.9) (xy 325.12 342.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0999765-a07b-4d1c-bd5c-5a80eb8b75e7")
 	)
 	(wire
 		(pts
@@ -10211,16 +9703,6 @@
 			(type default)
 		)
 		(uuid "f73e731d-3052-49ca-b47c-2ad20543f45f")
-	)
-	(wire
-		(pts
-			(xy 293.37 342.9) (xy 293.37 345.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f863801b-5537-4501-a82e-df99f4babd5e")
 	)
 	(wire
 		(pts
@@ -10392,16 +9874,6 @@
 			(justify left)
 		)
 		(uuid "0e7c0987-c689-45c3-8380-c3979a80bc24")
-	)
-	(text "ADS1015\n(from enbaldur)"
-		(exclude_from_sim no)
-		(at 307.34 399.415 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "16300ed8-9562-4aaa-98d9-49e8b4c734c6")
 	)
 	(text "4 ch esd diode: SRDA05-4BTG"
 		(exclude_from_sim no)
@@ -10989,6 +10461,17 @@
 		)
 		(uuid "34fb9b2e-ff72-4bec-925a-d858ff80eea6")
 	)
+	(label "I2C1_SCL"
+		(at 328.93 361.95 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "364e0e4b-d106-4f4b-b6b4-b182397bcdfa")
+	)
 	(label "IN13"
 		(at 83.82 250.19 0)
 		(fields_autoplaced yes)
@@ -11483,6 +10966,17 @@
 			(justify right bottom)
 		)
 		(uuid "7072e131-899d-43df-ac8b-2684781a5689")
+	)
+	(label "I2C1_SDA"
+		(at 328.93 364.49 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "70a25c96-a03f-4ea1-970b-4c8fce67c3c4")
 	)
 	(label "BUF17"
 		(at 360.68 123.19 180)
@@ -12188,17 +11682,6 @@
 		)
 		(uuid "b8190b3a-4639-4c66-a48d-63fddba9d417")
 	)
-	(label "Vvar"
-		(at 344.17 342.9 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b86a6746-7998-487d-ab57-6a10e5625f65")
-	)
 	(label "B33"
 		(at 104.14 41.91 180)
 		(fields_autoplaced yes)
@@ -12408,17 +11891,6 @@
 		)
 		(uuid "ce316d4b-5730-462d-935a-7076b0cf4c4b")
 	)
-	(label "I2C1_SCL"
-		(at 370.84 365.76 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "cecc67d2-743c-44b3-a454-76f53fe1950e")
-	)
 	(label "B32"
 		(at 104.14 46.99 180)
 		(fields_autoplaced yes)
@@ -12594,17 +12066,6 @@
 			(justify left bottom)
 		)
 		(uuid "ddf6fb30-5c4e-48ea-bc02-3967019317eb")
-	)
-	(label "I2C1_SDA"
-		(at 370.84 368.3 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e12c5d26-4156-47fe-bcee-630b2d809c90")
 	)
 	(label "BUF18"
 		(at 360.68 120.65 180)
@@ -12904,26 +12365,32 @@
 		(uuid "fea64032-da17-47d4-b386-3e47a6f62128")
 	)
 	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 351.79 342.9 0)
+		(lib_id "Analog_DAC:MCP4725xxx-xCH")
+		(at 351.79 364.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "00862f06-fca2-4de2-9a4e-ad25447614f5")
-		(property "Reference" "TP6"
-			(at 354.33 339.5979 0)
+		(uuid "005ca554-3d4f-4d7d-933a-a0ce9cb98551")
+		(property "Reference" "U1"
+			(at 354.965 353.695 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "TestPoint_Harwin"
-			(at 351.79 337.82 0)
+		(property "Value" "MCP4725A2T-E/CH"
+			(at 363.22 356.235 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 351.79 370.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12931,8 +12398,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 356.87 342.9 0)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/22039d.pdf"
+			(at 351.79 364.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12940,8 +12407,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 356.87 342.9 0)
+		(property "Description" "12-bit Digital-to-Analog Converter, integrated EEPROM, I2C interface, SOT-23-6"
+			(at 351.79 364.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12949,106 +12416,28 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 351.79 342.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 351.79 342.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "2"
+			(uuid "87cbe9a8-2f38-4899-9e2a-e62cc2d8a778")
 		)
 		(pin "1"
-			(uuid "7c892f45-45d6-41d7-bd2d-a691b4ed84ac")
+			(uuid "c9c984bb-0a0e-4744-9b40-dfc7be6eea18")
+		)
+		(pin "4"
+			(uuid "25009ce7-0146-4cb1-a782-4a2af30ca1e0")
+		)
+		(pin "3"
+			(uuid "16ea0891-cb69-4910-8851-131b984102c0")
+		)
+		(pin "5"
+			(uuid "674b3245-f86d-4373-99b6-fdd76fdc7e7e")
+		)
+		(pin "6"
+			(uuid "d0d30492-44ef-4fe7-be24-4baeced2a66c")
 		)
 		(instances
-			(project "state mode logic analyzer rp2350"
+			(project ""
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 307.34 368.3 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "01545bf2-fe09-4615-8da4-651491d5cbe8")
-		(property "Reference" "TP4"
-			(at 302.26 368.3 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 302.26 368.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 307.34 363.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 307.34 363.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 307.34 368.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 307.34 368.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fa72a967-569a-436e-aab9-b9ce90f0c81f")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP4")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -13320,72 +12709,6 @@
 			(project "state mode logic analyzer rp2350"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "R40")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 293.37 350.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0627e7d8-6dd4-4413-a658-7322f7c41558")
-		(property "Reference" "#PWR047"
-			(at 293.37 356.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 293.37 355.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 293.37 350.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 293.37 350.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 293.37 350.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cdcf00a5-eca9-459c-8323-cac4c4d6afa8")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -14590,8 +13913,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 381 369.57 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "1449a5c8-57e9-4a76-ab94-65ce8d2b951d")
+		(property "Reference" "R11"
+			(at 383.54 368.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1k"
+			(at 383.54 370.8399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 381 369.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 381 369.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 381 369.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b1848fd-83a0-4995-a3b3-01b4a5e52d1a")
+		)
+		(pin "2"
+			(uuid "35ac8703-d4a9-4c59-b190-37e5e95e9087")
+		)
+		(instances
+			(project "state mode logic analyzer rp2350"
+				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
-		(at 384.81 361.95 0)
+		(at 314.96 361.95 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14601,7 +13993,7 @@
 		(fields_autoplaced yes)
 		(uuid "15388c72-89e1-4db0-a7ac-02435e8b306c")
 		(property "Reference" "C6"
-			(at 382.27 360.6862 0)
+			(at 312.42 360.6862 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14610,7 +14002,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 382.27 363.2262 0)
+			(at 312.42 363.2262 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14619,7 +14011,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 384.81 361.95 0)
+			(at 314.96 361.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14628,7 +14020,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 384.81 361.95 0)
+			(at 314.96 361.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14637,7 +14029,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 384.81 361.95 0)
+			(at 314.96 361.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14927,187 +14319,6 @@
 			(project "state mode logic analyzer rp2350"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "#PWR074")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 363.22 383.54 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1edbeb8a-360b-47a7-b751-3b1a4fa2cfde")
-		(property "Reference" "#PWR057"
-			(at 363.22 389.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 363.22 388.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 363.22 383.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 363.22 383.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 363.22 383.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5d0301fc-f519-480f-b3fd-1e70eb6ebb21")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "#PWR057")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:AD5241")
-		(at 347.98 373.38 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "201c0ba9-572d-471c-b3d3-1d2431f275ea")
-		(property "Reference" "U3"
-			(at 345.7859 358.775 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "AD5241BRZ1M"
-			(at 345.7859 361.315 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 347.98 388.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ad5241_5242.pdf"
-			(at 345.44 378.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 347.98 373.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "49AK9193"
-			(at 347.98 373.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4bbaed7d-f691-4ad7-9caf-b87669451183")
-		)
-		(pin "10"
-			(uuid "43145d3e-a97e-4b5f-b553-5525e15b101c")
-		)
-		(pin "11"
-			(uuid "47526d5e-d2e4-456d-ae4d-fd14af3696c5")
-		)
-		(pin "12"
-			(uuid "92a7daf1-fea1-4b53-a167-2d701758b2ea")
-		)
-		(pin "13"
-			(uuid "b8141aea-165b-46d0-a115-695dc10d845d")
-		)
-		(pin "14"
-			(uuid "b657c0fe-e985-4c88-af57-4e00d99e2ccb")
-		)
-		(pin "2"
-			(uuid "322ec225-bfeb-4822-a514-6d504c380ed6")
-		)
-		(pin "3"
-			(uuid "d68c37d2-00ae-4029-a75d-aaff05912dc7")
-		)
-		(pin "4"
-			(uuid "1e49ac47-25ca-438c-8cb4-f592f771ac1a")
-		)
-		(pin "5"
-			(uuid "85dcca0d-4694-4a12-bb60-6d00a9ec1a1b")
-		)
-		(pin "6"
-			(uuid "41cf76e6-ca6c-44fc-9cdd-3644a5363b0e")
-		)
-		(pin "7"
-			(uuid "dcae0fbe-3c36-40f0-8d43-583703cd6e13")
-		)
-		(pin "8"
-			(uuid "63ca912c-28e7-4193-8f11-552e04b363b3")
-		)
-		(pin "9"
-			(uuid "22eff4f5-3814-4c84-afcc-6c1fe01f3311")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -15464,86 +14675,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:NCP1117-ADJ_SOT223")
-		(at 307.34 342.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "27ba3853-3c5c-400a-83ae-ecbaa03aebe8")
-		(property "Reference" "U1"
-			(at 307.34 336.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NCP1117-ADJ_SOT223"
-			(at 307.34 339.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 307.34 337.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF"
-			(at 309.88 349.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1A Low drop-out regulator, Adjustable Output 1.25 - 18.8V, SOT-223"
-			(at 307.34 342.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "NCP1117LPSTADT3G "
-			(at 307.34 342.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "c5773400-24ea-4db4-a5e9-32635a4d16c1")
-		)
-		(pin "2"
-			(uuid "4630209d-28dd-4894-91bd-393f7f0c1fb6")
-		)
-		(pin "1"
-			(uuid "3b79e499-972a-4f40-9f22-56fa81bcd073")
-		)
-		(instances
-			(project ""
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "My Library:TestPoint_Harwin")
 		(at 441.96 379.73 0)
 		(unit 1)
@@ -15835,6 +14966,74 @@
 			(project "state mode logic analyzer"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "TP100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 367.03 364.49 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2cbd74ed-5159-4374-a95f-7295897bd882")
+		(property "Reference" "R10"
+			(at 367.03 359.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 367.03 361.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 367.03 364.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 367.03 364.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 367.03 364.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "139955e6-9302-4b56-93ec-eabc6083b0ea")
+		)
+		(pin "2"
+			(uuid "56b401a5-3332-4659-8765-99ff5deda883")
+		)
+		(instances
+			(project ""
+				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -16274,71 +15473,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 328.93 370.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "320da020-a262-4d2f-b56a-31e1e202eb87")
-		(property "Reference" "#PWR046"
-			(at 328.93 377.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 328.93 374.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 328.93 370.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 328.93 370.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 328.93 370.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b53f0196-bca0-46eb-a510-9fc4a911b345")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "#PWR046")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 384.81 237.49 0)
 		(unit 1)
@@ -16403,6 +15537,73 @@
 			(project "state mode logic analyzer"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 373.38 374.65 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "34bc3b59-c5cf-4a4f-816e-7f822ff8ccd3")
+		(property "Reference" "#PWR056"
+			(at 373.38 381 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 373.38 379.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 373.38 374.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 373.38 374.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 373.38 374.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5a3cc76-b9fb-4043-ab5e-bf4520a8c12d")
+		)
+		(instances
+			(project "state mode logic analyzer rp2350"
+				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -16617,6 +15818,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 351.79 355.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3bf70632-b4bf-4780-b7ca-14a3e4db3ebc")
+		(property "Reference" "#PWR031"
+			(at 351.79 359.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 351.79 350.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 351.79 355.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 351.79 355.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 351.79 355.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d36d53d-fe5f-4151-be53-64dad60caeb3")
+		)
+		(instances
+			(project "state mode logic analyzer rp2350"
+				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 38.1 356.87 90)
 		(mirror x)
@@ -16679,72 +15945,6 @@
 			(project "state mode logic analyzer"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "#PWR063")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 325.12 353.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3d1edd52-f0e6-4963-b001-5e033422954d")
-		(property "Reference" "#PWR062"
-			(at 325.12 359.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 325.12 358.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 325.12 353.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 325.12 353.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 325.12 353.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "db295923-26b7-4564-8fa8-e6ca6bc53fd4")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -17626,76 +16826,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 325.12 347.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4932d57c-5ebf-4a0d-9ef3-feffedafa2b1")
-		(property "Reference" "R11"
-			(at 327.66 346.7099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1k"
-			(at 327.66 349.2499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 325.12 347.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 325.12 347.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 325.12 347.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "aee4d412-e4e0-4a60-867b-693729ccbcef")
-		)
-		(pin "1"
-			(uuid "4a98799a-8a9a-462e-abe1-449cba0016c1")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "My Library:TestPoint_Harwin")
 		(at 135.89 177.8 270)
 		(unit 1)
@@ -18473,6 +17603,79 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 392.43 369.57 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5b4be8f6-10e6-4d86-b163-9c8708aabcec")
+		(property "Reference" "J9"
+			(at 397.51 368.2999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Vth_select"
+			(at 397.51 370.8399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 392.43 369.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 392.43 369.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 392.43 369.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "4148b2ad-2830-47d1-ab79-d3378e81f58a")
+		)
+		(pin "1"
+			(uuid "a7ae8bb4-4350-41dd-87c9-1238cec585f0")
+		)
+		(pin "2"
+			(uuid "7fa4d14c-4af7-4794-8de8-efe851c8f499")
+		)
+		(instances
+			(project ""
+				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "My Library:TestPoint_Harwin")
 		(at 134.62 339.09 270)
 		(mirror x)
@@ -18933,72 +18136,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 365.76 342.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "65c3ab28-126e-4323-bdc6-6f63e87b54ce")
-		(property "Reference" "#PWR065"
-			(at 365.76 346.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 365.76 338.455 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 365.76 342.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 365.76 342.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 365.76 342.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f470d363-83ec-4034-8af6-d1fdb4e04cca")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "#PWR065")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 49.53 369.57 0)
 		(mirror y)
@@ -19129,77 +18266,6 @@
 			(project "state mode logic analyzer rp2350"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 316.23 373.38 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "6bf9a455-ddfa-467a-aa2f-367ace241293")
-		(property "Reference" "C5"
-			(at 318.77 372.1162 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1u"
-			(at 318.77 374.6562 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 316.23 373.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 316.23 373.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 316.23 373.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5dfe631b-0218-4398-902c-7dc5487a51fb")
-		)
-		(pin "2"
-			(uuid "a2b899c5-417c-4327-bbb3-61a9ae35ed19")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -19745,72 +18811,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 316.23 377.19 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7261a0ad-199f-4439-a37c-23749d5b341b")
-		(property "Reference" "#PWR052"
-			(at 316.23 383.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 316.23 382.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 316.23 377.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 316.23 377.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 316.23 377.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8ddb9903-d023-411f-9489-e635719a0637")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "#PWR052")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "My Library:TestPoint_Harwin")
 		(at 135.89 182.88 270)
 		(unit 1)
@@ -19955,71 +18955,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 347.98 358.14 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7364d613-d808-46ae-816f-d2d4bcb02d85")
-		(property "Reference" "#PWR053"
-			(at 347.98 361.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 347.98 353.695 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 347.98 358.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 347.98 358.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 347.98 358.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cc18f2bf-9ced-416e-a2c8-5106971e8153")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "#PWR053")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 95.25 198.12 270)
 		(mirror x)
@@ -20083,73 +19018,6 @@
 			(project "state mode logic analyzer rp2350"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "R55")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 384.81 359.41 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "745f1313-0cfb-4183-b23d-5fd6a26a0543")
-		(property "Reference" "#PWR059"
-			(at 384.81 363.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 384.81 354.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 384.81 359.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 384.81 359.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 384.81 359.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a0e28291-67c3-47fb-b8b3-7dc9535b7680")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -20853,148 +19721,6 @@
 		)
 	)
 	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 335.28 378.46 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7c3095cc-7b97-43fd-b837-9cf9a4d72dbb")
-		(property "Reference" "TP1"
-			(at 330.2 378.46 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 330.2 378.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 335.28 373.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 335.28 373.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 335.28 378.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 335.28 378.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c652c5a1-d165-4ce2-a283-efa14c200d87")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 363.22 339.09 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7c3eb5cc-029b-4bd3-8f3f-d0d1c7acfe74")
-		(property "Reference" "#PWR031"
-			(at 363.22 342.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Vccb"
-			(at 363.22 334.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 363.22 339.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 363.22 339.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 363.22 339.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "eed115b5-13ff-41cf-9a2f-231d528e6972")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "#PWR031")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 114.3 308.61 0)
 		(unit 1)
@@ -21189,75 +19915,6 @@
 			(project "state mode logic analyzer rp2350"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "#PWR041")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 293.37 347.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "81114922-88d7-438d-b6af-2b96c46f58d7")
-		(property "Reference" "C1"
-			(at 290.83 346.7162 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10u"
-			(at 290.83 349.2562 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 293.37 347.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 293.37 347.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 293.37 347.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c2a257c8-3a14-41d2-a828-9db7a960e5a5")
-		)
-		(pin "2"
-			(uuid "befa77b6-3a0b-48e4-b73b-cc5054d66506")
-		)
-		(instances
-			(project ""
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -22315,16 +20972,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 373.38 373.38 0)
+		(lib_id "power:+5V")
+		(at 394.97 363.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "90fef791-9957-48bf-8629-2a48ac7ec859")
-		(property "Reference" "#PWR061"
-			(at 373.38 377.19 0)
+		(uuid "90aec08d-a746-4ec7-aa75-0c9ad8902fe1")
+		(property "Reference" "#PWR053"
+			(at 394.97 367.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22332,17 +20989,16 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 370.205 369.57 0)
+		(property "Value" "+5V"
+			(at 394.97 358.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 373.38 373.38 0)
+			(at 394.97 363.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22351,7 +21007,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 373.38 373.38 0)
+			(at 394.97 363.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22359,8 +21015,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 373.38 373.38 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 394.97 363.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22369,12 +21025,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "9ef82f94-1628-4bb5-84a8-d3526f56a9e4")
+			(uuid "43f6ea74-7d9b-410c-b3d0-d0f4ca7bb35a")
 		)
 		(instances
 			(project "state mode logic analyzer rp2350"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "#PWR061")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -23040,7 +21696,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 384.81 364.49 0)
+		(at 314.96 364.49 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23050,7 +21706,7 @@
 		(fields_autoplaced yes)
 		(uuid "9b53c5f3-ca72-4cfc-bb6c-10109744162f")
 		(property "Reference" "#PWR060"
-			(at 384.81 370.84 0)
+			(at 314.96 370.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23059,7 +21715,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 384.81 369.57 0)
+			(at 314.96 369.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23067,7 +21723,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 384.81 364.49 0)
+			(at 314.96 364.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23076,7 +21732,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 384.81 364.49 0)
+			(at 314.96 364.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23085,7 +21741,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 384.81 364.49 0)
+			(at 314.96 364.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23236,81 +21892,6 @@
 			(project "state mode logic analyzer rp2350"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 374.65 373.38 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9f3b6c5c-d920-4323-9137-0ccc02db0d77")
-		(property "Reference" "TP3"
-			(at 379.73 373.38 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 379.73 373.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 374.65 378.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 374.65 378.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 374.65 373.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 374.65 373.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b26d4fea-616a-407f-a1fa-29ced93be594")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -23662,72 +22243,6 @@
 			(project "state mode logic analyzer"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 293.37 342.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a33b4587-5984-4058-bf43-36cf724f4347")
-		(property "Reference" "#PWR064"
-			(at 293.37 346.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 293.37 338.455 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 293.37 342.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 293.37 342.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 293.37 342.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b26e2656-8949-4ce2-9e75-d967bd2c7f68")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -24337,6 +22852,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 351.79 373.38 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "abb125c9-b2f5-4715-9cf3-95aa1120dc56")
+		(property "Reference" "#PWR046"
+			(at 351.79 379.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 351.79 378.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 351.79 373.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 351.79 373.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 351.79 373.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6c233bd1-80e8-460c-8309-d8f965d82b3a")
+		)
+		(instances
+			(project "state mode logic analyzer rp2350"
+				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
+					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "My Library:TestPoint_Harwin")
 		(at 134.62 46.99 270)
 		(unit 1)
@@ -24908,6 +23490,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 381 374.65 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b113decb-f062-4b15-a6da-38df98ed9944")
+		(property "Reference" "#PWR057"
+			(at 381 381 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 381 379.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 381 374.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 381 374.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 381 374.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "58cfee5a-fff2-4a4a-88db-247e085b3acb")
+		)
+		(instances
+			(project "state mode logic analyzer rp2350"
+				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
+					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "My Library:TestPoint_Harwin")
 		(at 448.31 379.73 0)
 		(unit 1)
@@ -25264,81 +23913,6 @@
 			(project "state mode logic analyzer rp2350"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "TP21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 335.28 365.76 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bb846d60-a5ca-4fed-862d-02d1ad5233ea")
-		(property "Reference" "TP5"
-			(at 330.2 365.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 330.2 365.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 335.28 360.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 335.28 360.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 335.28 365.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 335.28 365.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "764071b2-87f5-449c-8669-95b9f88d4ba6")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -26280,80 +24854,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 363.22 347.98 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c98ec1a9-2b5b-4d48-a7a5-812be6787b7d")
-		(property "Reference" "J9"
-			(at 368.3 346.7099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Vth_select"
-			(at 368.3 349.2499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 363.22 347.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 363.22 347.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 363.22 347.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2ab5f812-ef35-462b-871e-7df323e03d37")
-		)
-		(pin "2"
-			(uuid "21a15a45-12e9-4738-a17b-d9efef02733c")
-		)
-		(pin "3"
-			(uuid "7206763b-027a-4319-94d4-1bba68746338")
-		)
-		(instances
-			(project ""
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "J9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 95.25 250.19 270)
 		(mirror x)
@@ -26700,6 +25200,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 392.43 360.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cfec3ef0-5a5d-45e6-8f33-4314781bb1e9")
+		(property "Reference" "#PWR052"
+			(at 392.43 364.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Vccb"
+			(at 392.43 355.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 392.43 360.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 392.43 360.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 392.43 360.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1995e637-48b1-4f2e-9648-a6b10f960eef")
+		)
+		(instances
+			(project "state mode logic analyzer rp2350"
+				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
+					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 452.12 383.54 0)
 		(unit 1)
@@ -26759,76 +25325,6 @@
 			(project "state mode logic analyzer"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "#PWR050")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 316.23 351.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d13554fc-d7aa-45cd-9343-83ca6ca2e5e6")
-		(property "Reference" "R10"
-			(at 318.77 350.5199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3k3"
-			(at 318.77 353.0599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 316.23 351.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 316.23 351.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 316.23 351.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a7321a8f-abdd-4942-8bba-e6aeba983858")
-		)
-		(pin "1"
-			(uuid "cda54b32-5088-4dbc-9817-c196622346c7")
-		)
-		(instances
-			(project ""
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -26898,72 +25394,6 @@
 			(project "state mode logic analyzer rp2350"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "R42")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 334.01 351.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d5186a53-9b11-4545-be04-79be3f4364f3")
-		(property "Reference" "#PWR051"
-			(at 334.01 358.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 334.01 356.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 334.01 351.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 334.01 351.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 334.01 351.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "eeb4cf93-f7ba-445f-ae20-e313dd2bf536")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -27511,6 +25941,71 @@
 			(project "state mode logic analyzer"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 314.96 359.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e9e772dc-13b3-450b-b10d-34c6d9554b04")
+		(property "Reference" "#PWR051"
+			(at 314.96 363.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 314.96 354.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 314.96 359.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 314.96 359.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 314.96 359.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2a3dde54-49e9-4cbe-83b4-c3523f4c5e5a")
+		)
+		(instances
+			(project "state mode logic analyzer rp2350"
+				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -28095,77 +26590,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 334.01 349.25 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f0d084e3-9ba6-4a5b-a4ae-b7438b35d53f")
-		(property "Reference" "C2"
-			(at 336.55 347.9862 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10u"
-			(at 336.55 350.5262 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 334.01 349.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 334.01 349.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 334.01 349.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "51b73412-a933-441a-adba-e26d504ceb00")
-		)
-		(pin "2"
-			(uuid "e2c9c725-a456-4d96-b3cc-45726f2da19d")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "My Library:TestPoint_Harwin")
 		(at 134.62 318.77 270)
 		(mirror x)
@@ -28311,6 +26735,143 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 373.38 370.84 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "f64769fa-e403-4c6e-bc13-db824510cb4c")
+		(property "Reference" "C1"
+			(at 370.84 369.5762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 370.84 372.1162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 373.38 370.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 373.38 370.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 373.38 370.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "31b01b0f-7e7a-4c9b-beef-dad8450de7b5")
+		)
+		(pin "2"
+			(uuid "b3f68ad1-cf54-43c1-b973-b7bf485e5d12")
+		)
+		(instances
+			(project "state mode logic analyzer rp2350"
+				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 339.09 369.57 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f64e2146-7e59-4e04-9702-9dc55f8ca72e")
+		(property "Reference" "#PWR047"
+			(at 339.09 375.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 339.09 374.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 339.09 369.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 339.09 369.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 339.09 369.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9d63a581-5f81-42b6-b5a8-3979812d5a9e")
+		)
+		(instances
+			(project "state mode logic analyzer rp2350"
+				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 125.73 389.89 0)
 		(mirror y)
@@ -28372,81 +26933,6 @@
 			(project "state mode logic analyzer rp2350"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 335.28 381 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fb110287-d7aa-4321-923a-62d49dc2e90f")
-		(property "Reference" "TP2"
-			(at 330.2 381 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 330.2 381 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 335.28 375.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 335.28 375.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 335.28 381 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 335.28 381 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c4c044ec-a3dc-4bac-ab59-f4feec536973")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -28856,72 +27342,6 @@
 			(project "state mode logic analyzer rp2350"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "#PWR086")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 347.98 392.43 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ff4047c7-cbaf-4cb9-be8b-fa7f16fbc03e")
-		(property "Reference" "#PWR056"
-			(at 347.98 398.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 347.98 397.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 347.98 392.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 347.98 392.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 347.98 392.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d8233aa3-dd7b-4af3-a5bd-21af8142a29a")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "#PWR056")
 					(unit 1)
 				)
 			)
