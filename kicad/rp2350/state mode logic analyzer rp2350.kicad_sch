@@ -7030,22 +7030,10 @@
 		(uuid "0e4eb29a-31c2-47cb-9d6f-c59fd24c88d8")
 	)
 	(junction
-		(at 519.43 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "36ff7e0a-5b63-4450-8148-fb2b4b14cf66")
-	)
-	(junction
 		(at 381 364.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3fa21184-96d6-4819-b2d4-0e2a83c195ab")
-	)
-	(junction
-		(at 513.08 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "45d2de6c-46db-4883-b58d-f79ca0f2449c")
 	)
 	(junction
 		(at 452.12 382.27)
@@ -7084,6 +7072,12 @@
 		(uuid "7fd7ab15-8e73-4dca-8701-e88fb122bc0f")
 	)
 	(junction
+		(at 520.7 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "88667f23-7635-40a8-b318-8bd50f198d44")
+	)
+	(junction
 		(at 373.38 364.49)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7096,16 +7090,22 @@
 		(uuid "9731a9cd-1eec-40ab-9340-10f796f0446f")
 	)
 	(junction
+		(at 381 373.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "97709de8-1cd7-4f83-9369-de99617947ee")
+	)
+	(junction
 		(at 322.58 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a6e1dd06-a1b9-4976-bf51-2343f32198d7")
 	)
 	(junction
-		(at 513.08 83.82)
+		(at 513.08 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b434e46c-dbfe-4f00-98fb-ee439f993f43")
+		(uuid "ca31c62e-87ba-4fc4-8187-62b63ad87601")
 	)
 	(junction
 		(at 494.03 106.68)
@@ -7124,6 +7124,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e4c97bae-5631-435a-a965-87bba0e8932e")
+	)
+	(junction
+		(at 513.08 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e5be6795-cf70-4bc4-ac6a-2a0c26825c67")
 	)
 	(junction
 		(at 521.97 73.66)
@@ -7158,10 +7164,6 @@
 	(no_connect
 		(at 270.51 138.43)
 		(uuid "48ab325b-1e60-4cd4-b2c1-28dbcad3b95d")
-	)
-	(no_connect
-		(at 342.9 201.93)
-		(uuid "52442efb-82fa-4472-96b4-ed869dc877d7")
 	)
 	(no_connect
 		(at 342.9 189.23)
@@ -7307,16 +7309,6 @@
 	)
 	(wire
 		(pts
-			(xy 519.43 60.96) (xy 520.7 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "09bb00e1-b4d3-4ff8-a641-4ad31cb31f6e")
-	)
-	(wire
-		(pts
 			(xy 135.89 114.3) (xy 128.27 114.3)
 		)
 		(stroke
@@ -7387,6 +7379,16 @@
 	)
 	(wire
 		(pts
+			(xy 381 379.73) (xy 381 381)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "114d2399-73bf-44f6-9adf-36d2cf31d64a")
+	)
+	(wire
+		(pts
 			(xy 392.43 361.95) (xy 392.43 364.49)
 		)
 		(stroke
@@ -7424,6 +7426,16 @@
 			(type default)
 		)
 		(uuid "162ab99f-41c1-4a8b-a0c4-69e991595676")
+	)
+	(wire
+		(pts
+			(xy 381 373.38) (xy 396.24 373.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "165aee67-0120-49e5-b24d-7471a164899b")
 	)
 	(wire
 		(pts
@@ -8057,6 +8069,16 @@
 	)
 	(wire
 		(pts
+			(xy 342.9 201.93) (xy 360.68 201.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52512326-ccb8-43a6-a21c-6d86fcc956c8")
+	)
+	(wire
+		(pts
 			(xy 92.71 187.96) (xy 83.82 187.96)
 		)
 		(stroke
@@ -8154,6 +8176,16 @@
 			(type default)
 		)
 		(uuid "5b140fb7-a115-422a-a5c4-3c2a29b032ca")
+	)
+	(wire
+		(pts
+			(xy 381 373.38) (xy 381 374.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b9d6346-ed0a-44a3-9cce-5d2b091668d9")
 	)
 	(wire
 		(pts
@@ -8487,16 +8519,6 @@
 	)
 	(wire
 		(pts
-			(xy 524.51 81.28) (xy 513.08 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "764431c9-b98f-4f39-970f-4625fc376e0f")
-	)
-	(wire
-		(pts
 			(xy 370.84 246.38) (xy 370.84 248.92)
 		)
 		(stroke
@@ -8717,7 +8739,7 @@
 	)
 	(wire
 		(pts
-			(xy 529.59 83.82) (xy 537.21 83.82)
+			(xy 513.08 83.82) (xy 520.7 83.82)
 		)
 		(stroke
 			(width 0)
@@ -8814,6 +8836,16 @@
 			(type default)
 		)
 		(uuid "8bb68497-a81a-44ae-b50e-2ead5b2c8959")
+	)
+	(wire
+		(pts
+			(xy 520.7 60.96) (xy 520.7 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bee7cc6-5395-42ad-a7b0-9149a6788891")
 	)
 	(wire
 		(pts
@@ -8977,7 +9009,7 @@
 	)
 	(wire
 		(pts
-			(xy 529.59 81.28) (xy 537.21 81.28)
+			(xy 513.08 81.28) (xy 520.7 81.28)
 		)
 		(stroke
 			(width 0)
@@ -9097,17 +9129,7 @@
 	)
 	(wire
 		(pts
-			(xy 515.62 60.96) (xy 519.43 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a303f4cb-21f7-4c19-8caf-7892b7803218")
-	)
-	(wire
-		(pts
-			(xy 381 372.11) (xy 381 374.65)
+			(xy 381 372.11) (xy 381 373.38)
 		)
 		(stroke
 			(width 0)
@@ -10277,16 +10299,6 @@
 	)
 	(wire
 		(pts
-			(xy 524.51 83.82) (xy 513.08 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb56d828-110c-4ccd-85e2-51b5c8f429df")
-	)
-	(wire
-		(pts
 			(xy 82.55 354.33) (xy 91.44 354.33)
 		)
 		(stroke
@@ -10365,9 +10377,9 @@
 		)
 		(uuid "ff8def42-87a1-448f-bdcf-0e2269bda68e")
 	)
-	(text "TODO:\n- Switch to Stamp XL\n- Add LDO with DigiPot\n- Add OLED Header?\n- More decoupling for the BUS XCVRs\n- add ESD protection to inputs\n"
+	(text "TODO:\n- Add OLED Header?\n- More decoupling for the BUS XCVRs\n- add ESD protection to inputs\n"
 		(exclude_from_sim no)
-		(at 521.335 -21.59 0)
+		(at 488.95 27.305 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -10375,6 +10387,16 @@
 			(justify left)
 		)
 		(uuid "0e7c0987-c689-45c3-8380-c3979a80bc24")
+	)
+	(text "if build a test board add a buffer to eval the threshold"
+		(exclude_from_sim no)
+		(at 361.315 342.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4ede1e3f-8f31-4d3e-8444-6754bc30c5f9")
 	)
 	(text "4 ch esd diode: SRDA05-4BTG"
 		(exclude_from_sim no)
@@ -10875,7 +10897,7 @@
 		(uuid "2cabaaed-5dd5-471f-8144-7bf488fac75e")
 	)
 	(label "DP"
-		(at 537.21 83.82 180)
+		(at 520.7 83.82 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10886,7 +10908,7 @@
 		(uuid "2e44d255-627d-4e83-af9e-8b8e817c1a97")
 	)
 	(label "DN"
-		(at 537.21 81.28 180)
+		(at 520.7 81.28 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11192,17 +11214,6 @@
 			(justify left bottom)
 		)
 		(uuid "51884fc3-540f-4d23-ba9d-2df488c44b53")
-	)
-	(label "USB_DN"
-		(at 514.35 81.28 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "528f9620-a1d6-482c-b8a8-d4acdfb93e39")
 	)
 	(label "I2C1_SDA"
 		(at 360.68 209.55 180)
@@ -11765,6 +11776,17 @@
 		)
 		(uuid "9060d73b-4944-4b11-ba54-9f714f204e55")
 	)
+	(label "Vdac"
+		(at 396.24 373.38 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "92b86639-b0e5-4363-a0b6-d8456eea2fc8")
+	)
 	(label "IN31"
 		(at 83.82 93.98 0)
 		(fields_autoplaced yes)
@@ -12227,17 +12249,6 @@
 		)
 		(uuid "bbba6c3f-b1f4-4a12-bb33-28dca51bba24")
 	)
-	(label "USB_DP"
-		(at 514.35 83.82 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bbcfeb73-ef31-490b-85b5-7fd91c9673de")
-	)
 	(label "VBUS"
 		(at 542.29 77.47 0)
 		(fields_autoplaced yes)
@@ -12402,6 +12413,17 @@
 			(justify right bottom)
 		)
 		(uuid "cf1378d1-9c94-41b5-952b-eb6c03ec88e5")
+	)
+	(label "Vdac"
+		(at 360.68 201.93 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cfa8532a-a025-41d9-9930-e0229e9206dc")
 	)
 	(label "Reset"
 		(at 297.18 120.65 180)
@@ -13488,83 +13510,6 @@
 		)
 	)
 	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 134.62 328.93 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "098117cd-e4e3-4dca-bfb5-1483281f8756")
-		(property "Reference" "TP105"
-			(at 140.335 328.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 139.7 328.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 134.62 323.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 134.62 323.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 134.62 328.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 134.62 328.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c0efa9ba-fccc-4571-b414-4a094437bf3b")
-		)
-		(instances
-			(project "state mode logic analyzer"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP105")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 325.12 30.48 270)
 		(unit 1)
@@ -13592,7 +13537,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical"
 			(at 325.12 30.48 0)
 			(effects
 				(font
@@ -13760,82 +13705,6 @@
 			(project "state mode logic analyzer"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 265.43 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0b8e447e-8d04-4877-97ef-5ee3dd7af9a1")
-		(property "Reference" "TP110"
-			(at 141.605 265.43 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 265.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 270.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 270.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 265.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 265.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0c8bf81c-4c1c-417c-8c3e-8d96e753b437")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP110")
 					(unit 1)
 				)
 			)
@@ -14270,151 +14139,6 @@
 		)
 	)
 	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 270.51 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "12e45783-0072-4a32-9055-1d9655ed0023")
-		(property "Reference" "TP109"
-			(at 141.605 270.51 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 270.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 270.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 270.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c6cf4011-6304-4062-9d61-b09e32023a93")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP109")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 527.05 83.82 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1385d873-218e-4f81-bffb-4a9ad2fbe768")
-		(property "Reference" "R9"
-			(at 525.145 85.725 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "27"
-			(at 525.78 83.82 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 527.05 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 527.05 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 527.05 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b3fbb6ea-8aef-4d48-9867-75bc5b5e79fb")
-		)
-		(pin "2"
-			(uuid "d0680c98-a230-4d8e-a488-d8b6e695f762")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 95.25 245.11 270)
 		(mirror x)
@@ -14490,7 +14214,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "1449a5c8-57e9-4a76-ab94-65ce8d2b951d")
 		(property "Reference" "R11"
 			(at 383.54 368.2999 0)
@@ -14501,7 +14225,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 383.54 370.8399 0)
 			(effects
 				(font
@@ -14753,76 +14477,6 @@
 			(project "state mode logic analyzer rp2350"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 527.05 81.28 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1d696691-fe46-4c58-bb0a-5ec167db93ba")
-		(property "Reference" "R8"
-			(at 525.145 79.375 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "27"
-			(at 525.78 81.28 90)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 527.05 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 527.05 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 527.05 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d3250efd-ca9d-4cf5-a7c7-a41ef0b9641b")
-		)
-		(pin "2"
-			(uuid "b493da0c-5028-42d8-9de1-9022384c70eb")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -15321,82 +14975,6 @@
 		)
 	)
 	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 93.98 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2bca3405-8b35-4ffd-bb42-65807dd12d8c")
-		(property "Reference" "TP131"
-			(at 141.605 93.98 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1a468e05-3460-43f9-917e-5364dd275032")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP131")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 95.25 187.96 270)
 		(mirror x)
@@ -15460,83 +15038,6 @@
 			(project "state mode logic analyzer rp2350"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "R53")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 134.62 354.33 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2c8d1180-5c39-462a-a198-d680e90c5bb9")
-		(property "Reference" "TP100"
-			(at 140.335 354.33 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 139.7 354.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 134.62 349.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 134.62 349.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 134.62 354.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 134.62 354.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "33aaf5b3-cfea-4af0-aebe-ebcce2f22b4d")
-		)
-		(instances
-			(project "state mode logic analyzer"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP100")
 					(unit 1)
 				)
 			)
@@ -15818,82 +15319,6 @@
 		)
 	)
 	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 172.72 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2fec9a5f-364a-499d-9612-2ac83be5b362")
-		(property "Reference" "TP122"
-			(at 141.605 172.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1e1483f0-f46a-4046-9be3-6ebb19d11b35")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP122")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 39.37 367.03 0)
 		(mirror y)
@@ -16030,81 +15455,6 @@
 			(project "state mode logic analyzer rp2350"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "TP22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 275.59 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "30ca1b0f-27de-4af3-958a-ed419b0e8388")
-		(property "Reference" "TP108"
-			(at 141.605 275.59 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 280.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 280.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "48ec95ce-560e-40ac-bf05-acca31852686")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP108")
 					(unit 1)
 				)
 			)
@@ -17182,82 +16532,6 @@
 		)
 	)
 	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 114.3 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "44b9e88c-0431-42c7-a355-0c3a5190c741")
-		(property "Reference" "TP127"
-			(at 141.605 114.3 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "61c8b9f2-4cf9-4611-b448-5ddd5145cb3a")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP127")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 95.25 172.72 270)
 		(mirror x)
@@ -17458,82 +16732,6 @@
 			(project "state mode logic analyzer"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "#PWR067")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 177.8 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "49b5e3fe-dab2-4eea-99ad-08fbb6d54228")
-		(property "Reference" "TP121"
-			(at 141.605 177.8 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9073908b-75e3-4ec5-b1a8-1879f73290a1")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP121")
 					(unit 1)
 				)
 			)
@@ -18165,82 +17363,6 @@
 		)
 	)
 	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 250.19 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "54cc09c6-4b94-4c9b-9dea-99b0a1daa5e1")
-		(property "Reference" "TP113"
-			(at 141.605 250.19 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 250.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 250.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 250.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3ba072aa-9977-4928-a446-d382e597ee51")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP113")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
 		(at 392.43 369.57 270)
 		(unit 1)
@@ -18308,83 +17430,6 @@
 			(project ""
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "J9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 134.62 339.09 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5d029744-c029-4f6f-b0b5-22bc3c238232")
-		(property "Reference" "TP103"
-			(at 140.335 339.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 139.7 339.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 134.62 334.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 134.62 334.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 134.62 339.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 134.62 339.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "829d98f8-308e-4db8-af01-4999eaf393ae")
-		)
-		(instances
-			(project "state mode logic analyzer"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP103")
 					(unit 1)
 				)
 			)
@@ -19046,6 +18091,75 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
+		(at 381 377.19 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6c66aee6-8486-4580-a337-573dd0260beb")
+		(property "Reference" "R7"
+			(at 383.54 375.9199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 383.54 378.4599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 381 377.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 381 377.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 381 377.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "64f61d49-7b09-485a-91a7-ef8843e63e5f")
+		)
+		(pin "2"
+			(uuid "2a3cf329-45cd-4601-974b-48d7458ae005")
+		)
+		(instances
+			(project "state mode logic analyzer rp2350"
+				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
 		(at 95.25 182.88 270)
 		(mirror x)
 		(unit 1)
@@ -19584,82 +18698,6 @@
 		)
 	)
 	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 182.88 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7296d513-49bb-4b43-ae4a-6dbad227f953")
-		(property "Reference" "TP120"
-			(at 141.605 182.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "de05df79-cde6-40a4-84d4-21a5aad5d5e6")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP120")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 281.94 92.71 0)
 		(mirror y)
@@ -19791,82 +18829,6 @@
 			(project "state mode logic analyzer rp2350"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "R55")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 134.62 41.91 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "760cba72-f799-4b0c-ba88-e7c405f062b8")
-		(property "Reference" "TP133"
-			(at 140.335 41.91 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 139.7 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 134.62 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 134.62 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 134.62 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 134.62 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "876c304d-d9cf-4ff7-9787-b754d6181d1e")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP133")
 					(unit 1)
 				)
 			)
@@ -20210,82 +19172,6 @@
 			(project ""
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 193.04 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7a1512d2-f252-4ca3-b1fa-a53d6b0a9c84")
-		(property "Reference" "TP118"
-			(at 141.605 193.04 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0419b354-d62b-45bd-be88-e0500ec4a099")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP118")
 					(unit 1)
 				)
 			)
@@ -20695,83 +19581,6 @@
 		)
 	)
 	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 134.62 334.01 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "811c3c5c-1767-4298-9f3e-c0bcc0f51a74")
-		(property "Reference" "TP104"
-			(at 140.335 334.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 139.7 334.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 134.62 328.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 134.62 328.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 134.62 334.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 134.62 334.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bb6dc940-4cbe-4836-9608-7cc020f21459")
-		)
-		(instances
-			(project "state mode logic analyzer"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP104")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 133.35 208.28 0)
 		(unit 1)
@@ -20908,73 +19717,6 @@
 			(project "state mode logic analyzer"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "TP19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 520.7 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "84e2c6a2-15c7-4dd1-babe-dfe481e82fdd")
-		(property "Reference" "#PWR020"
-			(at 520.7 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 520.7 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 520.7 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 520.7 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 520.7 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "870abc0e-38c0-4be1-ba27-5793c2a693e7")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -21184,83 +19926,6 @@
 		)
 	)
 	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 134.62 344.17 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "880b6b12-b03d-4a83-8913-f9d5a4ec71f0")
-		(property "Reference" "TP102"
-			(at 140.335 344.17 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 139.7 344.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 134.62 339.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 134.62 339.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 134.62 344.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 134.62 344.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "da5f8ebc-8199-402d-8305-ab0af2aa4cba")
-		)
-		(instances
-			(project "state mode logic analyzer"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP102")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 93.98 349.25 270)
 		(unit 1)
@@ -21330,7 +19995,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 519.43 60.96 0)
+		(at 520.7 63.5 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21339,7 +20004,7 @@
 		(fields_autoplaced yes)
 		(uuid "899e35ae-f05c-4dc8-9c20-0297152ae95a")
 		(property "Reference" "#FLG02"
-			(at 519.43 59.055 0)
+			(at 522.605 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21348,7 +20013,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 519.43 56.515 0)
+			(at 525.145 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21357,7 +20022,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 519.43 60.96 0)
+			(at 520.7 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21366,7 +20031,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 519.43 60.96 0)
+			(at 520.7 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21375,7 +20040,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 519.43 60.96 0)
+			(at 520.7 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22325,82 +20990,6 @@
 		)
 	)
 	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 240.03 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "95362c2a-a79c-4f24-b777-a83c4ca6e0b3")
-		(property "Reference" "TP115"
-			(at 141.605 240.03 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 245.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 245.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "14ab6c88-ef2c-4011-b37d-69d583e710b2")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP115")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 120.65 229.87 0)
 		(unit 1)
@@ -22811,82 +21400,6 @@
 		)
 	)
 	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 260.35 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9fcb948b-6469-4c04-be39-eecbce11af00")
-		(property "Reference" "TP111"
-			(at 141.605 260.35 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 265.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 265.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2622c8c1-2059-4259-8a43-8eddbe277ada")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP111")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 35.56 66.04 0)
 		(mirror y)
@@ -23015,81 +21528,6 @@
 			(project "state mode logic analyzer"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 129.54 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a3cc8b9e-bf8f-4e31-a8b5-383417900e83")
-		(property "Reference" "TP124"
-			(at 141.605 129.54 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "31871acc-81e6-4acd-bdb1-8aaf29b38855")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP124")
 					(unit 1)
 				)
 			)
@@ -23691,159 +22129,6 @@
 		)
 	)
 	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 134.62 46.99 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "abc32475-94aa-40b9-a61b-443b83e27c09")
-		(property "Reference" "TP132"
-			(at 140.335 46.99 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 139.7 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 134.62 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 134.62 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 134.62 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 134.62 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3b442762-bd33-4aa1-be24-ee6eb227ab4f")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP132")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 134.62 349.25 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "abd346c5-af14-4402-9ac5-53e913e306d7")
-		(property "Reference" "TP101"
-			(at 140.335 349.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 139.7 349.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 134.62 344.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 134.62 344.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 134.62 349.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 134.62 349.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d0c86602-d674-4cf1-8391-98c83ee6c2a3")
-		)
-		(instances
-			(project "state mode logic analyzer"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 135.89 387.35 0)
 		(mirror y)
@@ -23916,7 +22201,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 515.62 60.96 0)
+		(at 520.7 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23925,7 +22210,7 @@
 		(fields_autoplaced yes)
 		(uuid "ad2dd832-cdd8-401e-a8fa-a2474d49b5d9")
 		(property "Reference" "#PWR019"
-			(at 515.62 64.77 0)
+			(at 520.7 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23934,7 +22219,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 515.62 56.515 0)
+			(at 520.7 56.515 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23942,7 +22227,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 515.62 60.96 0)
+			(at 520.7 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23951,7 +22236,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 515.62 60.96 0)
+			(at 520.7 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23960,7 +22245,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 515.62 60.96 0)
+			(at 520.7 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24263,7 +22548,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 381 374.65 0)
+		(at 381 381 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24273,7 +22558,7 @@
 		(fields_autoplaced yes)
 		(uuid "b113decb-f062-4b15-a6da-38df98ed9944")
 		(property "Reference" "#PWR057"
-			(at 381 381 0)
+			(at 381 387.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24282,7 +22567,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 381 379.73 0)
+			(at 381 386.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24290,7 +22575,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 381 374.65 0)
+			(at 381 381 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24299,7 +22584,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 381 374.65 0)
+			(at 381 381 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24308,7 +22593,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 381 374.65 0)
+			(at 381 381 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24541,82 +22826,6 @@
 	)
 	(symbol
 		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 245.11 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b8d08956-3213-43ed-86df-6f2b9fde6bd9")
-		(property "Reference" "TP114"
-			(at 141.605 245.11 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 245.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 250.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 250.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 245.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 245.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4b45f523-2152-4818-af86-45fd5cc376a2")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP114")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
 		(at 397.51 209.55 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24685,158 +22894,6 @@
 			(project "state mode logic analyzer rp2350"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "TP21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 198.12 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bcb4c7b0-eec5-4c4b-a8d5-99fcad248e0f")
-		(property "Reference" "TP117"
-			(at 141.605 198.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 203.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 203.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2b5a1528-72c9-43c0-bb80-b9af3aa16ef4")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP117")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 99.06 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bed6caea-a093-42b1-8cf6-f498ebeed2f6")
-		(property "Reference" "TP130"
-			(at 141.605 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "20db1d8b-11d1-44c8-a3c9-b868dc3f9834")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP130")
 					(unit 1)
 				)
 			)
@@ -25259,307 +23316,6 @@
 		)
 	)
 	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 203.2 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c5d8a962-ffc2-4c84-a73f-737a363fc2c4")
-		(property "Reference" "TP116"
-			(at 141.605 203.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 203.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 203.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 203.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "17daf002-0919-48d8-be7a-aed24a3e0f12")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP116")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 134.62 323.85 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c64fb663-b4a9-4661-84a5-c1bd5844c83c")
-		(property "Reference" "TP106"
-			(at 140.335 323.85 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 139.7 323.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 134.62 318.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 134.62 318.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 134.62 323.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 134.62 323.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "aa87bf48-d066-4389-8b5c-9b52893de3bb")
-		)
-		(instances
-			(project "state mode logic analyzer"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP106")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 109.22 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c65b869a-e1f0-4376-8c41-645222faaa9e")
-		(property "Reference" "TP128"
-			(at 141.605 109.22 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "22b72ea5-3ab7-4809-8a0f-49a059a41e22")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP128")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 525.78 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c67f8f5c-536d-43b3-a022-be7d9ca4b489")
-		(property "Reference" "J2"
-			(at 528.955 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5V USB0"
-			(at 528.955 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 525.78 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 525.78 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 525.78 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "db2d6f3a-5e1c-4ca1-af96-058bebe18b42")
-		)
-		(pin "2"
-			(uuid "8a97cfd6-2dea-4598-8e45-5d34086d0d13")
-		)
-		(pin "3"
-			(uuid "05afd7c8-4c1d-49ad-afc9-1a39cbb3031f")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "PWR_FLAG_1")
 		(lib_id "power:PWR_FLAG")
 		(at 392.43 361.95 90)
@@ -25825,82 +23581,6 @@
 			(project "state mode logic analyzer rp2350"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "R35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 124.46 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cc984283-87b0-4d7a-97bf-0a43c4c727e3")
-		(property "Reference" "TP125"
-			(at 141.605 124.46 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1d387fe9-e5f2-40c8-a0c6-31373c6182fa")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP125")
 					(unit 1)
 				)
 			)
@@ -26579,82 +24259,6 @@
 		)
 	)
 	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 119.38 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "da43ed46-b805-4956-a711-9cd6d4b708ae")
-		(property "Reference" "TP126"
-			(at 141.605 119.38 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cc7398b1-89d7-4314-9820-18699c822d59")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP126")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 116.84 57.15 0)
 		(unit 1)
@@ -26987,158 +24591,6 @@
 		)
 	)
 	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 104.14 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e9ea25e7-988c-490a-8362-b8831c78e20d")
-		(property "Reference" "TP129"
-			(at 141.605 104.14 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c668f982-039d-405e-a1fe-2e492d376b18")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP129")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 187.96 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eabeb963-5325-4cf2-b953-163a8946fbf9")
-		(property "Reference" "TP119"
-			(at 141.605 187.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a07c0b13-1746-46f7-88e2-c36ec5382efe")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP119")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 135.89 384.81 0)
 		(mirror y)
@@ -27200,82 +24652,6 @@
 			(project "state mode logic analyzer rp2350"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 255.27 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "edaa2016-e1bf-4775-b728-f7aa01d3ccd1")
-		(property "Reference" "TP112"
-			(at 141.605 255.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 260.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "110a3d92-0ef8-4a26-9a18-b6e3c1749cd8")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP112")
 					(unit 1)
 				)
 			)
@@ -27483,158 +24859,6 @@
 			(project "state mode logic analyzer rp2350"
 				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
 					(reference "U5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 135.89 167.64 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ee8f74ee-cd7a-4c2f-9e76-18cfba73f7ad")
-		(property "Reference" "TP123"
-			(at 141.605 167.64 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 140.97 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 135.89 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.89 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 135.89 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ef398a53-5a16-49ed-8ed2-d0309214682b")
-		)
-		(instances
-			(project "state mode logic analyzer rp2350"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP123")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "My Library:TestPoint_Harwin")
-		(at 134.62 318.77 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f1e36e50-1e4a-413e-9c90-8bdea2e2a29b")
-		(property "Reference" "TP107"
-			(at 140.335 318.77 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint_Harwin"
-			(at 139.7 318.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 134.62 313.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 134.62 313.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 134.62 318.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SPN" "75R5336"
-			(at 134.62 318.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6943af9d-6f6d-4e6e-8829-6f9accdf4cd7")
-		)
-		(instances
-			(project "state mode logic analyzer"
-				(path "/7975ca51-68cd-4bb7-8d39-236fa03ee415"
-					(reference "TP107")
 					(unit 1)
 				)
 			)
