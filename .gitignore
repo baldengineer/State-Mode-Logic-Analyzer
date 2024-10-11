@@ -10,3 +10,4 @@ firmware/clkdly/clkdly/build/
 firmware/clkdly/clkdly/.vscode/
 kicad/rp2350/fp-lib-table
 *.kicad_prl
+kicad/dac_test_board/#auto_saved_files#
