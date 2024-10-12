@@ -10377,7 +10377,7 @@
 		)
 		(uuid "ff8def42-87a1-448f-bdcf-0e2269bda68e")
 	)
-	(text "TODO:\n- Add OLED Header?\n- More decoupling for the BUS XCVRs\n- add ESD protection to inputs\n"
+	(text "TODO:\n- Add OLED Header?\n- More decoupling for the BUS XCVRs\n- add ESD protection to inputs\n- add STEMMA QT Connector\n"
 		(exclude_from_sim no)
 		(at 488.95 27.305 0)
 		(effects
