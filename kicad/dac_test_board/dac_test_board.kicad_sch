@@ -5022,6 +5022,16 @@
 		)
 		(uuid "fc6a79de-fff9-461c-9fbc-e0eeeb6eb7bc")
 	)
+	(text "Now.. I am thinking of the DigiPot and LDO on a single board.\nThen breakout for the buffer that connects to it."
+		(exclude_from_sim no)
+		(at 218.44 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "381d5291-6829-4594-9a34-5d35c2ec6938")
+	)
 	(text "Stemma QT"
 		(exclude_from_sim no)
 		(at 17.78 166.37 0)
