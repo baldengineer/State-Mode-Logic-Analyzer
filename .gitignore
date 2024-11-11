@@ -9,6 +9,7 @@ datasheets/
 **/fp-info-cache
 **/#auto_saved_files#
 **/sym-lib-table
+**/.~lock.*
 
 # Temporary files
 *.000
