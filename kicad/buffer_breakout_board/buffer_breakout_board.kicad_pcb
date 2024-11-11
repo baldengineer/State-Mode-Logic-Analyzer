@@ -118,9 +118,9 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "gerbs rev1/")
 		)
 	)
 	(net 0 "")
@@ -166,7 +166,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R14"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "15383e75-10b3-441e-9e98-0ff8d5ba8798")
@@ -178,7 +178,7 @@
 			)
 		)
 		(property "Value" "4k7"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "fc87e894-36fa-4bd2-98be-07691a78e422")
 			(effects
@@ -333,7 +333,7 @@
 			(uuid "f4ec6980-185b-46fa-a42d-5de15bce3f26")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "62aa42ec-8025-40c6-a33d-46c3be45bacc")
 			(effects
@@ -380,7 +380,7 @@
 		(descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, bridged with 1 copper strip")
 		(tags "net tie solder jumper bridged")
 		(property "Reference" "JP2"
-			(at 0 -1.8 360)
+			(at 0 -1.8 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "32537ef0-fb99-487e-a2fd-9e037f0852ff")
@@ -392,7 +392,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Bridged"
-			(at 0 1.9 360)
+			(at 0 1.9 0)
 			(layer "F.Fab")
 			(uuid "87c29eb7-7ab6-4df6-9507-fa95bd111311")
 			(effects
@@ -664,7 +664,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C3"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "f63643d4-3584-40c5-8328-87cedef076fa")
@@ -676,7 +676,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "16e5c314-0686-4565-82db-3522ccb25f24")
 			(effects
@@ -831,7 +831,7 @@
 			(uuid "c0ed38af-3add-4773-8679-524f29a4dccd")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "ae50cad6-eca1-41c2-b258-285a954e7414")
 			(effects
@@ -1448,7 +1448,7 @@
 		(descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, bridged with 1 copper strip")
 		(tags "net tie solder jumper bridged")
 		(property "Reference" "JP1"
-			(at 0 -1.8 360)
+			(at 0 -1.8 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "20255435-4cf3-44e5-9843-bcf4ecef722f")
@@ -1460,7 +1460,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Bridged"
-			(at 0 1.9 360)
+			(at 0 1.9 0)
 			(layer "F.Fab")
 			(uuid "79dea17a-b681-4468-aa72-21332d462063")
 			(effects
@@ -3744,7 +3744,7 @@
 		(descr "LED SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D1"
-			(at 0 -1.82 360)
+			(at 0 -1.82 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "be0b3712-590d-4c32-8872-d53926779ed4")
@@ -3756,7 +3756,7 @@
 			)
 		)
 		(property "Value" "Vb"
-			(at 0 1.82 360)
+			(at 0 1.82 0)
 			(layer "F.Fab")
 			(uuid "593c997b-1f31-4e42-ae7f-36320ff3b0a6")
 			(effects
@@ -3931,7 +3931,7 @@
 			(uuid "eb8cd443-b134-4e4c-acfb-41f16f321ec2")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "d364ed03-f329-4a8d-a438-d29cbdd5bcfb")
 			(effects
@@ -4194,7 +4194,7 @@
 		(descr "LED SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D2"
-			(at 0 -1.82 360)
+			(at 0 -1.82 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "831ddb75-7085-45cd-8a35-243169e2195b")
@@ -4206,7 +4206,7 @@
 			)
 		)
 		(property "Value" "Va"
-			(at 0 1.82 360)
+			(at 0 1.82 0)
 			(layer "F.Fab")
 			(uuid "fba7827c-f9e7-4a28-8ae6-5ea326e9ee98")
 			(effects
@@ -4381,7 +4381,7 @@
 			(uuid "9f24c62b-6b5f-4259-8f7a-c509ce00dce4")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "8e39fa6b-26e9-4050-bb3d-03baae037af3")
 			(effects
@@ -4858,7 +4858,7 @@
 		(uuid "a3dd00d6-32ac-40c7-be39-809549201c0c")
 		(at 152.6956 120.4695 180)
 		(property "Reference" "TP2"
-			(at 0.254 2.286 360)
+			(at 0.254 2.286 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "0e327f81-cd42-464f-ba5a-b29c83414e1c")
@@ -4870,7 +4870,7 @@
 			)
 		)
 		(property "Value" "TestPoint_Harwin"
-			(at 0 -1.778 360)
+			(at 0 -1.778 0)
 			(layer "F.Fab")
 			(uuid "5028f0b5-78fe-481f-bc17-1acf44d69b04")
 			(effects
@@ -4881,7 +4881,7 @@
 			)
 		)
 		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "27512ffd-0bb6-4c67-afe4-99fd1d5a0e49")
@@ -4893,7 +4893,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b56d0735-fb66-4e81-897f-74e7cbdc3ebb")
@@ -4905,7 +4905,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f9de49c4-6fce-4fe3-86ca-391983627e26")
@@ -5000,7 +5000,7 @@
 		(uuid "a5aca522-5032-4103-ae4e-3b4fb922160a")
 		(at 159.0456 85.6715 180)
 		(property "Reference" "TP4"
-			(at 0.254 2.286 360)
+			(at 0.254 2.286 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "02b930e8-869a-4d6b-ab94-474936653d0e")
@@ -5012,7 +5012,7 @@
 			)
 		)
 		(property "Value" "TestPoint_Harwin"
-			(at 0 -1.778 360)
+			(at 0 -1.778 0)
 			(layer "F.Fab")
 			(uuid "8c235346-6964-455d-891f-c8d1859e2618")
 			(effects
@@ -5023,7 +5023,7 @@
 			)
 		)
 		(property "Footprint" "My Libraries:Harwin-S1751-46-Test-Point"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "60a2bae3-ba3e-4ba0-a231-5d28e3eec545")
@@ -5035,7 +5035,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2df5aa0e-1f7c-45d5-8c2d-844ef979a8be")
@@ -5047,7 +5047,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "96763cde-6bc4-44f5-bf08-16b9701d670f")
@@ -6045,7 +6045,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R15"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "9d07df61-db51-48f5-90de-aeaad016e989")
@@ -6057,7 +6057,7 @@
 			)
 		)
 		(property "Value" "4k7"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "315315dd-960a-4b57-a86f-1166104bb4f1")
 			(effects
@@ -6212,7 +6212,7 @@
 			(uuid "0b16d4e5-7de5-4408-b894-02bbc9de996f")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "6711feb5-3092-45f8-9fa6-a826bedda532")
 			(effects
@@ -6547,7 +6547,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C4"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "990226c9-035b-4efc-b2b1-6ff22626bc33")
@@ -6559,7 +6559,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "3f8aaeb7-a925-4345-9dae-d4057e2795d5")
 			(effects
@@ -6714,7 +6714,7 @@
 			(uuid "7a6dbc62-9c0b-4fea-a51b-ce91d423b8c6")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "8b065501-435e-469b-a6ea-cee94f0a383b")
 			(effects
@@ -6910,6 +6910,7 @@
 			(effects
 				(font
 					(size 0.001 0.001)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -6922,6 +6923,7 @@
 			(effects
 				(font
 					(size 0.001 0.001)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)

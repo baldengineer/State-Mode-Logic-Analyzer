@@ -479,10 +479,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerbs rev1/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "dac_test_board.step",
       "svg": "",
       "vrml": ""
     },
