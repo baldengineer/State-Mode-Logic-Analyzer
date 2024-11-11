@@ -3648,6 +3648,16 @@
 		)
 		(uuid "fd83687b-8657-4b42-a80b-70e2ba785ba3")
 	)
+	(text "Uses DBQ package, which is slim."
+		(exclude_from_sim no)
+		(at 80.645 123.825 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e1410036-db97-441d-9c39-777c878c7698")
+	)
 	(label "GND"
 		(at 119.38 78.74 0)
 		(fields_autoplaced yes)
@@ -5492,24 +5502,23 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "52516aab-6d94-4c3c-a469-e72c2526aabd")
 		(property "Reference" "U2"
-			(at 86.7059 118.11 0)
+			(at 81.915 117.475 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "SN74LVC8T245"
-			(at 86.7059 120.65 0)
+		(property "Value" "SN74LVC8T245DBQR"
+			(at 65.405 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Package_SO:SSOP-24_3.9x8.7mm_P0.635mm"
