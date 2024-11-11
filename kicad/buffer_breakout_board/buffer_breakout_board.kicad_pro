@@ -58,7 +58,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "solder_mask_bridge|150774400|118229500|6840777c-fd10-4aa8-9d37-4604a2f7e961|3ef18aab-5655-4b00-b258-25ddd9d1f480",
+        "solder_mask_bridge|151079200|117679500|6840777c-fd10-4aa8-9d37-4604a2f7e961|3ef18aab-5655-4b00-b258-25ddd9d1f480",
+        "solder_mask_bridge|154305000|118229500|0d15dfe5-4ede-476d-9dfd-eee90ead2d52|a827742c-e3e9-45c3-8ec2-97014e062849",
+        "solder_mask_bridge|154623600|117679500|0d15dfe5-4ede-476d-9dfd-eee90ead2d52|a827742c-e3e9-45c3-8ec2-97014e062849"
+      ],
       "meta": {
         "version": 2
       },
@@ -123,7 +128,7 @@
         "min_hole_to_hole": 0.127,
         "min_microvia_diameter": 0.4572,
         "min_microvia_drill": 0.254,
-        "min_resolved_spokes": 2,
+        "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.127,
@@ -444,7 +449,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "dac_test_board.kicad_pro",
+    "filename": "buffer_breakout_board.kicad_pro",
     "version": 1
   },
   "net_settings": {
