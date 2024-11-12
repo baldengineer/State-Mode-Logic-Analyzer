@@ -5,6 +5,7 @@ datasheets/
 *.lck
 *.kicad_prl
 *.zip
+*.7z
 **/fp-lib-table
 **/fp-info-cache
 **/#auto_saved_files#
